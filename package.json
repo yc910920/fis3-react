@@ -20,8 +20,8 @@
     },
     "homepage": "https://github.com/shanchenbaby/fis3-react#readme",
     "dependencies": {
-        "moment": "^2.18.1",
         "antd": "^2.9.3",
+        "moment": "^2.18.1",
         "react": "^15.5.4",
         "react-dom": "^15.5.4",
         "whatwg-fetch": "^2.0.3"
