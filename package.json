@@ -4,7 +4,8 @@
     "description": "react project scaffolding",
     "main": "fis-conf.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "commit": "git add . && git commit -m mmm",
+        "push": "npm run commit && git push"
     },
     "repository": {
         "type": "git",
@@ -25,5 +26,8 @@
         "react": "^15.5.4",
         "react-dom": "^15.5.4",
         "whatwg-fetch": "^2.0.3"
+    },
+    "devDependencies": {
+        "mockjs": "^1.0.1-beta3"
     }
 }
