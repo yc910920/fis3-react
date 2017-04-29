@@ -5,7 +5,8 @@
     "main": "fis-conf.js",
     "scripts": {
         "commit": "git add . && git commit -m mmm",
-        "push": "npm run commit && git push"
+        "push": "npm run commit && git push",
+        "build": "fis3 release production -cd ./build"
     },
     "repository": {
         "type": "git",
