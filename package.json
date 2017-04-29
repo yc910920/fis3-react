@@ -1,29 +1,29 @@
 {
-	"name": "fis3-react",
-	"version": "1.0.0",
-	"description": "react project scaffolding",
-	"main": "fis-conf.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/shanchenbaby/fis3-react.git"
-	},
-	"keywords": [
-		"react"
-	],
-	"author": "99874405@qq.com",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/shanchenbaby/fis3-react/issues"
-	},
-	"homepage": "https://github.com/shanchenbaby/fis3-react#readme",
-	"dependencies": {
-		"moment": "^2.18.1",
-		"antd": "^2.9.3",
-		"react": "^15.5.4",
-		"react-dom": "^15.5.4",
-		"whatwg-fetch": "^2.0.3"
-	}
+    "name": "fis3-react",
+    "version": "1.0.0",
+    "description": "react project scaffolding",
+    "main": "fis-conf.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shanchenbaby/fis3-react.git"
+    },
+    "keywords": [
+        "react"
+    ],
+    "author": "99874405@qq.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shanchenbaby/fis3-react/issues"
+    },
+    "homepage": "https://github.com/shanchenbaby/fis3-react#readme",
+    "dependencies": {
+        "moment": "^2.18.1",
+        "antd": "^2.9.3",
+        "react": "^15.5.4",
+        "react-dom": "^15.5.4",
+        "whatwg-fetch": "^2.0.3"
+    }
 }
