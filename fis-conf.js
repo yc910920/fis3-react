@@ -14,5 +14,5 @@ fis.match('/{src,node_modules}/**.{js,es6,jsx}', { isMod: true })
 
 // 开启 babel
 fis.match('/src/**.{es6,jsx}', {
-    // parser: 
+    parser: fis.plugin('babel-6.x')
 })
