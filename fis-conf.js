@@ -27,6 +27,11 @@ fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
     isMod: true
 })
 
+// 压缩 html:js
+fis.match('*.html:js', {
+    optimizer: fis.plugin('uglify-js')
+})
+
 // 合并 node_modules 依赖
 fis.match('/node_modules/**.js', {
     packTo: '/pkg/third.js',
@@ -37,6 +42,6 @@ fis.match('/node_modules/**.js', {
 fis.match('::package', {
     postpackager: fis.plugin('loader', {
         useInlineMap: true,
-        resourcemapWhitespace: 4
+        resourcemapWhitespace: 0
     })
 })
