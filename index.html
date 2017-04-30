@@ -15,9 +15,9 @@
     <script src="./static/lib/mod.js"></script>
     <script>
         'use strict';
-        (function (require) {
-            if (require) require(['main']);
-        }(require));
+        (function () {
+            require.async(['main']);
+        });
     </script>
 </body>
 </html>
