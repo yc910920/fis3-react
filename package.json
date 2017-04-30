@@ -6,6 +6,7 @@
     "scripts": {
         "start": "fis3 server clean && fis3 server start -p 8888",
         "dev": "fis3 server clean && fis3 release -cw",
+        "pro": "fis3 server clean && fis3 release production -cw",
         "build": "rm -rf build && fis3 release production -cd ./build",
         "commit": "git add . && git commit -m mmm && git push"
     },

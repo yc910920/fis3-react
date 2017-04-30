@@ -19,6 +19,8 @@
 
 `2. npm run dev ( 开启 local dev mode )`
 
+`3. npm run pro ( 开启 local pro mode )`
+
 
 #### commit code
 `1. npm run commit ( 源代码提交到 master )`
