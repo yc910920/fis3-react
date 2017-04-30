@@ -4,9 +4,10 @@
     "description": "react project scaffolding",
     "main": "fis-conf.js",
     "scripts": {
-        "commit": "git add . && git commit -m mmm",
-        "push": "npm run commit && git push",
-        "build": "rm -rf build && fis3 release production -cd ./build"
+        "start": "fis3 server clean && fis3 server start -p 8888",
+        "dev": "fis3 server clean && fis3 release -cw",
+        "build": "rm -rf build && fis3 release production -cd ./build",
+        "commit": "git add . && git commit -m mmm && git push"
     },
     "repository": {
         "type": "git",

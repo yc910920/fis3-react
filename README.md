@@ -1,6 +1,7 @@
 ### react project scaffolding
 ---
 
+
 #### download project
 `1. install node`
 
@@ -12,7 +13,14 @@
 
 `5. npm i`
 
-#### commit code
-`1. npm run push ( 源代码提交到 master )`
 
-`2. npm run build ( 本地构建 )`
+#### use project
+`1. npm run start ( 开启 local web server )`
+
+`1. npm run dev` ( 开启 dev mode )
+
+
+#### commit code
+`1. npm run commit ( 源代码提交到 master )`
+
+`2. npm run build ( 资源产出 )`
