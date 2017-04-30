@@ -72,7 +72,6 @@ fis.match('::package', {
 // 上线模式
 fis.media('production')
    .match('!(*.html)', { useHash: true })
-   .match('/{src,node_modules}/**.{js,es6,jsx}', { moduleId: function() { return fis.util.md5(arguments[1], 20) } })
-   .match('/static/**.css', { packTo: '/pkg/all.css', optimizer: fis.plugin('clean-css') })
-   .match('/mock/**', { release: false })
-   .match('/src/**.{es6,jsx}', { packTo: '/pkg/app.js', optimizer: fis.plugin('uglify-js') })
+   .match('/(mock/**)', { release: false })
+   .match('/(static/**.css)', { optimizer: fis.plugin('clean-css'), packTo: '/pkg/all.css' })
+   .match('/{src,node_modules}/**.{js,es6,jsx}', { optimizer: fis.plugin('uglify-js'), packTo: '/pkg/all.js', moduleId: function () { return fis.util.md5(arguments[1], 20) } })
