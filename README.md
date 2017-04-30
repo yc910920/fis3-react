@@ -13,6 +13,6 @@
 `5. npm i`
 
 #### commit code
-`1. npm run commit ( 源代码提交到 master )`
+`1. npm run push ( 源代码提交到 master )`
 
 `2. npm run build ( 本地构建 )`
