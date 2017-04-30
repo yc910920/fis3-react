@@ -29,7 +29,7 @@ fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
 
 // 合并 node_modules 依赖
 fis.match('/node_modules/**.js', {
-    // isMod: true
+    packTo: '/pkg/third.js'
 })
 
 // 因为是纯前端项目，依赖不能自动被加载进来，所以这里需要借助一个 loader 来完成
