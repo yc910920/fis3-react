@@ -81,5 +81,15 @@
     .match('!(*.html)', { useHash: true })
     .match('/(mock/**)', { release: false })
     .match('/(static/**.css)', { packTo: '/pkg/all.css' })
-    .match('/{static,src,node_modules}/**.{js,es6,jsx}', { packTo: '/pkg/all.js', moduleId: function () { return fis.util.md5(arguments[1], 20); }, optimizer: fis.plugin('uglify-js') });
+    .match('/{static,src,node_modules}/**.{js,es6,jsx}', { packTo: '/pkg/all.js', moduleId: function () { return fis.util.md5(arguments[1], 20); }, optimizer: fis.plugin('uglify-js') })
+    .match('/(**)', {
+        deploy: [
+            fis.plugin('local-deliver', {
+                to: './.package/'
+            }),
+            fis.plugin('tar', {
+                filename: 'fe.tar.gz'
+            })
+        ]
+    });
 }(fis));
