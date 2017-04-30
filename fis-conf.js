@@ -17,7 +17,7 @@ fis.hook('commonjs', {
 
 // 压缩 html
 fis.match('*.html', {
-    optimizer : fis.plugin("htmlminify")
+    optimizer: fis.plugin('htmlminify')
 })
 
 // 压缩 html:js
@@ -28,19 +28,19 @@ fis.match('*.html:js', {
 // 开启模块化
 fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
     isMod: true,
-    moduleId: function () {
+    moduleId: function() {
         return fis.util.md5(arguments[1], 22)
     }
 })
 
 // 开启 babel
 fis.match('/src/**.{es6,jsx}', {
-    preprocessor: fis.plugin('js-require-css'),
     rExt: 'js',
     parser: fis.plugin('babel-5.x', {
-        optional: ["es7.decorators", "es7.classProperties"],
+        optional: ['es7.decorators', 'es7.classProperties'],
         sourceMaps: true
-    })
+    }),
+    preprocessor: [fis.plugin('js-require-css'), fis.plugin('js-require-file')]
 })
 
 // 合并 node_modules 依赖
