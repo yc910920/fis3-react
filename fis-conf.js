@@ -59,6 +59,6 @@ fis.match('::package', {
 
 // 上线模式
 fis.media('production')
-   .match('!(*.html,)', { useHash: true })
+   .match('!(*.html)', { useHash: true })
    .match('*.css', { packTo: '/pkg/pkg.css' })
-   .match('/src/**.{es6,jsx}', { packTo: '/pkg/app.js' })   
+   .match('/src/**.{es6,jsx}', { packTo: '/pkg/app.js' })
