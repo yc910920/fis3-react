@@ -11,3 +11,8 @@ fis.hook('commonjs', { tab: 4, baseUrl: '/src/', extList: ['.js', '.es6', '.jsx'
 
 // 开启模块化
 fis.match('/{src,node_modules}/**.{js,es6,jsx}', { isMod: true })
+
+// 开启 babel
+fis.match('/src/**.{es6,jsx}', {
+    // parser: 
+})
