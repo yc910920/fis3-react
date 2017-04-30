@@ -14,7 +14,10 @@
     <!-- ReactJS entry. -->
     <script src="./static/lib/mod.js"></script>
     <script>
-        require(['main']);
+        'use strict';
+        (function () {
+            require(['main']);
+        }());
     </script>
 </body>
 </html>
