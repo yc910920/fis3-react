@@ -1,7 +1,7 @@
 ### react project scaffolding
 ---
 
-#### use project
+#### download project
 `1. install node`
 
 `2. git clone https://github.com/shanchenbaby/fis3-react.git`
