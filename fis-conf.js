@@ -29,7 +29,7 @@ fis.match('*.html:js', {
 fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
     isMod: true,
     moduleId: function () {
-        return fis.util.md5(arguments[1])
+        return fis.util.md5(arguments[1], 10)
     }
 })
 
