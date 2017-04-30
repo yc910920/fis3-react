@@ -19,7 +19,9 @@ fis.hook('commonjs', {
 // 开启 babel
 fis.match('/src/**.{es6,jsx}', {
     rExt: 'js',
-    parser: fis.plugin('babel-6.x')
+    parser: fis.plugin('babel-6.x', {
+        sourceMaps: true
+    })
 })
 
 // 开启模块化
