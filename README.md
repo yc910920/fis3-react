@@ -1,6 +1,7 @@
 ## react project scaffolding
 ```
 ├── mock
+├── node_modules
 ├── src
 │   ├── actions
 │   ├── api
