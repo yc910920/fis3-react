@@ -4,7 +4,7 @@
  */
 
 // 按需加载
-fis.set('project.files', ['*.html'])
+fis.set('project.files', ['*.html', '/mock/**'])
 
 // 采用 node_modules 依赖
 fis.hook('node_modules').unhook('components')
