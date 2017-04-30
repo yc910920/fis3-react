@@ -6,6 +6,8 @@
 // 按需加载
 fis.set('project.files', ['*.html'])
 
+// 采用 node_modules 依赖
+fis.hook('node_modules').unhook('components')
 
 // 采用 commonjs 模块化方案
 fis.hook('commonjs', {
@@ -14,23 +16,16 @@ fis.hook('commonjs', {
     extList: ['.js', '.es6', '.jsx']
 })
 
-
-// 采用 node_modules 依赖
-fis.hook('node_modules').unhook('components')
-
-
-// 开启模块化
-fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
-    isMod: true
-})
-
-
 // 开启 babel
 fis.match('/src/**.{es6,jsx}', {
     rExt: 'js',
     parser: fis.plugin('babel-6.x')
 })
 
+// 开启模块化
+fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
+    isMod: true
+})
 
 // 因为是纯前端项目，依赖不能自动被加载进来，所以这里需要借助一个 loader 来完成
 fis.match('::package', {
