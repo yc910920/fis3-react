@@ -15,6 +15,11 @@ fis.hook('commonjs', {
     extList: ['.js', '.es6', '.jsx']
 })
 
+// 压缩 html
+fis.match('*.html', {
+    optimizer : fis.plugin("htmlminify")
+})
+
 // 压缩 html:js
 fis.match('*.html:js', {
     optimizer: fis.plugin('uglify-js')
