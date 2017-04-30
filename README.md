@@ -23,4 +23,4 @@
 #### commit code
 `1. npm run commit ( 源代码提交到 master )`
 
-`2. npm run build ( 资源产出 )`
+`2. npm run build ( 上线资源产出 )`
