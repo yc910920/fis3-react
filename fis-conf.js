@@ -34,6 +34,7 @@ fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
 fis.match('/src/**.{es6,jsx}', {
     rExt: 'js',
     parser: fis.plugin('babel-5.x', {
+        optional: ["es7.decorators", "es7.classProperties"],
         sourceMaps: true
     })
 })
