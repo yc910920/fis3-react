@@ -1,39 +1,40 @@
 {
-  "name": "fis3-react",
-  "version": "1.0.0",
-  "description": "react project scaffolding",
-  "main": "fis-conf.js",
-  "scripts": {
-    "commit": "git add . && git commit -m mmm",
-    "push": "npm run commit && git push",
-    "build": "rm -rf build && fis3 release production -cd ./build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shanchenbaby/fis3-react.git"
-  },
-  "keywords": [
-    "react"
-  ],
-  "author": "99874405@qq.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shanchenbaby/fis3-react/issues"
-  },
-  "homepage": "https://github.com/shanchenbaby/fis3-react#readme",
-  "dependencies": {
-    "antd": "^2.9.3",
-    "moment": "^2.18.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-redux": "^5.0.4",
-    "react-router": "^4.1.1",
-    "react-router-redux": "^4.0.8",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0",
-    "whatwg-fetch": "^2.0.3"
-  },
-  "devDependencies": {
-    "mockjs": "^1.0.1-beta3"
-  }
+    "name": "fis3-react",
+    "version": "1.0.0",
+    "description": "react project scaffolding",
+    "main": "fis-conf.js",
+    "scripts": {
+        "commit": "git add . && git commit -m mmm",
+        "push": "npm run commit && git push",
+        "build": "rm -rf build && fis3 release production -cd ./build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shanchenbaby/fis3-react.git"
+    },
+    "keywords": [
+        "react"
+    ],
+    "author": "99874405@qq.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shanchenbaby/fis3-react/issues"
+    },
+    "homepage": "https://github.com/shanchenbaby/fis3-react#readme",
+    "dependencies": {
+        "antd": "^2.9.3",
+        "moment": "^2.18.1",
+        "react": "^15.5.4",
+        "react-dom": "^15.5.4",
+        "react-redux": "^5.0.4",
+        "react-router": "^4.1.1",
+        "react-router-redux": "^4.0.8",
+        "redux": "^3.6.0",
+        "redux-thunk": "^2.2.0",
+        "whatwg-fetch": "^2.0.3"
+    },
+    "devDependencies": {
+        "json-server": "^0.10.0",
+        "mockjs": "^1.0.1-beta3"
+    }
 }
