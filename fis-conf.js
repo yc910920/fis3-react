@@ -60,6 +60,6 @@ fis.match('::package', {
 // 上线模式
 fis.media('production')
    .match('!(*.html)', { useHash: true })
-   .match('*.css', { packTo: '/pkg/pkg.css' })
+   .match('/static/**.css', { packTo: '/pkg/pkg.css' })
    .match('/mock/**', { release: false })
    .match('/src/**.{es6,jsx}', { packTo: '/pkg/app.js', optimizer: fis.plugin('uglify-js') })
