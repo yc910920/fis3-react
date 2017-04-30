@@ -17,7 +17,7 @@
 #### use project
 `1. npm run start ( 开启 local web server )`
 
-`1. npm run dev` ( 开启 dev mode )
+`2. npm run dev ( 开启 dev mode )`
 
 
 #### commit code
