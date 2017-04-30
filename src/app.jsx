@@ -1,4 +1,4 @@
 /**
- * @file: app.jsx
- * @author 99874405@qq.com
+ * @file app.jsx
+ * @email 99874405@qq.com
  */

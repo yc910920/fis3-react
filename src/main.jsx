@@ -1,6 +1,6 @@
 /**
- * @file: main.es6
- * @author 99874405@qq.com
+ * @file main.jsx
+ * @email 99874405@qq.com
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -8,8 +8,6 @@ import ReactDOM from 'react-dom';
 
 
 ReactDOM.render(
-    <div>
-        hello
-    </div>,
+    <div> hello </div>,
     document.getElementById('app')
 );

@@ -1,6 +1,6 @@
 /**
- * @file: fis-conf.js
- * @author 99874405@qq.com
+ * @file fis-conf.js
+ * @email 99874405@qq.com
  */
 
 // 按需加载
