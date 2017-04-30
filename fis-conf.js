@@ -27,7 +27,10 @@ fis.match('*.html:js', {
 
 // 开启模块化
 fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
-    isMod: true
+    isMod: true,
+    moduleId: function () {
+        return fis.util.md5(arguments[1])
+    }
 })
 
 // 开启 babel
