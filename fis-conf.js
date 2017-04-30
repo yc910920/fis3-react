@@ -14,5 +14,14 @@ fis.match('/{src,node_modules}/**.{js,es6,jsx}', { isMod: true })
 
 // 开启 babel
 fis.match('/src/**.{es6,jsx}', {
-    parser: fis.plugin('babel-6.x')
+  rExt: 'js',
+  parser: fis.plugin('babel-6.x')
+})
+
+// 因为是纯前端项目，依赖不能自动被加载进来，所以这里需要借助一个 loader 来完成
+fis.match('::package', {
+  postpackager: fis.plugin('loader', {
+    useInlineMap: true,
+    resourcemapWhitespace: 4
+  })
 })
