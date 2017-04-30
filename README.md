@@ -1,4 +1,4 @@
-#### react project scaffolding
+### react project scaffolding
 ---
 
 `1. install node`
