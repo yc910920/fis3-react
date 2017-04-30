@@ -11,8 +11,8 @@ fis.hook('node_modules').unhook('components')
 
 // 采用 commonjs 模块化方案
 fis.hook('commonjs', {
-    baseUrl: '/src/',
-    extList: ['.js', '.es6', '.jsx']
+    extList: ['.js', '.es6', '.jsx'],
+    baseUrl: '/src/'
 })
 
 // 压缩 png
@@ -25,7 +25,7 @@ fis.match('*.html', {
     optimizer: fis.plugin('htmlminify')
 })
 
-// 压缩 html:js, /static/lib/mod.js
+// 压缩 *.html:js,/static/lib/mod.js
 fis.match('{*.html:js,/static/lib/mod.js}', {
     optimizer: fis.plugin('uglify-js')
 })
@@ -34,7 +34,7 @@ fis.match('{*.html:js,/static/lib/mod.js}', {
 fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
     isMod: true,
     moduleId: function() {
-        return fis.util.md5(arguments[1], 22)
+        return fis.util.md5(arguments[1], 20)
     }
 })
 
