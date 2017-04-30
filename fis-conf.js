@@ -61,4 +61,5 @@ fis.match('::package', {
 fis.media('production')
    .match('!(*.html)', { useHash: true })
    .match('*.css', { packTo: '/pkg/pkg.css' })
+   .match('/mock/**', { release: false })
    .match('/src/**.{es6,jsx}', { packTo: '/pkg/app.js' })
