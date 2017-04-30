@@ -18,10 +18,10 @@ fis.hook('commonjs', {
 
 // 开启 babel
 fis.match('/src/**.{es6,jsx}', {
-    rExt: 'js',
-    parser: fis.plugin('babel-6.x', {
+    parser: fis.plugin('babel-5.x', {
         sourceMaps: true
-    })
+    }),
+    rExt: 'js'
 })
 
 // 开启模块化
