@@ -27,6 +27,11 @@ fis.match('/{src,node_modules}/**.{js,es6,jsx}', {
     isMod: true
 })
 
+// 合并 node_modules 依赖
+fis.match('/node_modules/**.js', {
+    // isMod: true
+})
+
 // 因为是纯前端项目，依赖不能自动被加载进来，所以这里需要借助一个 loader 来完成
 fis.match('::package', {
     postpackager: fis.plugin('loader', {
