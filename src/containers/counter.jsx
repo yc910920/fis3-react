@@ -5,6 +5,7 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Button } from 'antd';
 
 
 
@@ -19,7 +20,13 @@ export default class Counter extends Component {
         let { count } = this.state;
         return (
             <div>
-                { count }
+                <div>
+                    <Button size="small"> + </Button>&nbsp;
+                    <Button size="small"> - </Button>&nbsp;
+                </div>
+                <div>
+                    { count }
+                </div>
             </div>
         );
     }
