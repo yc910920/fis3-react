@@ -12,7 +12,9 @@ import { Button, Progress, message } from 'antd';
 export default class Counter extends Component {
 
     state = {
-        count: 55
+        count: 98,
+        countMax: 100,
+        countMin: 0
     };
 
 
@@ -22,12 +24,12 @@ export default class Counter extends Component {
         let setState = this.setState.bind(this);
         return {
             handleAdd() {
-                if ( state.count === 0 ) return message.warn('别他妈的点了.');
+                if ( state.count >= state.countMax ) return message.warn('别他妈的点了.');
                 setState({ count: ++state.count });
             },
 
             handleSubtract() {
-                if ( state.count === 100 ) return message.warn('别他妈的点了.');
+                if ( state.count <= state.countMin ) return message.warn('别他妈的点了.');
                 setState({ count: --state.count });
             }
         };   
