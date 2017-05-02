@@ -9,6 +9,7 @@ import { Button, Progress, message } from 'antd';
 
 
 
+// not use redux
 export default class Counter extends Component {
 
     state = {
