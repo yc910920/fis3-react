@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom';
 
 
 export default class Counter extends Component {
+
     state = {
         count: 0
     };
@@ -22,4 +23,5 @@ export default class Counter extends Component {
             </div>
         );
     }
+
 }
