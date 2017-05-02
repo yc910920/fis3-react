@@ -4,10 +4,16 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { 
+    Counter
+ } from './containers';
 
 
 
 ReactDOM.render(
-    <div>hello world</div>,
+    <div>
+        hello world
+        <Counter />
+    </div>,
     document.getElementById('app')
 );
