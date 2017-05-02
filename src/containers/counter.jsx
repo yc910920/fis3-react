@@ -16,6 +16,20 @@ export default class Counter extends Component {
     };
 
 
+    get methods() {
+        const that = this;
+        return {
+            handleAdd() {
+                
+            },
+
+            handleSubtract() {
+
+            }
+        };   
+    }
+
+
     render() {
         let { count } = this.state;
         return (
