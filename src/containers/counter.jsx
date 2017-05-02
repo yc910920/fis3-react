@@ -5,14 +5,14 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from 'antd';
+import { Button, Progress } from 'antd';
 
 
 
 export default class Counter extends Component {
 
     state = {
-        count: 0
+        count: 55
     };
 
 
@@ -38,12 +38,10 @@ export default class Counter extends Component {
         return (
             <div>
                 <div>
-                    <Button size="small" onClick={ handleAdd }> + </Button>&nbsp;
-                    <Button size="small" onClick={ handleSubtract }> - </Button>&nbsp;
+                    <Button size="small" onClick={ handleAdd }> + </Button>&nbsp;&nbsp;
+                    <Button size="small" onClick={ handleSubtract }> - </Button>&nbsp;&nbsp;
                 </div>
-                <div>
-                    { count }
-                </div>
+                <Progress type="dashboard" percent={ count } />
             </div>
         );
     }
