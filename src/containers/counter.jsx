@@ -18,13 +18,15 @@ export default class Counter extends Component {
 
     get methods() {
         const that = this;
+        const state = this.state;
+        const setState = this.setState.bind(this);
         return {
             handleAdd() {
-                
+                setState({ count: ++state.count });
             },
 
             handleSubtract() {
-
+                setState({ count: --state.count });
             }
         };   
     }
