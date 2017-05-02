@@ -4,6 +4,8 @@
  */
 // 加减器
 import Counter from './counter';
+
+// containers entry.
 export default {
     Counter
 };
