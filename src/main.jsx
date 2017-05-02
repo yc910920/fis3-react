@@ -8,6 +8,6 @@ import { render } from 'react-dom';
 
 
 render(
-    <div>hello</div>,
+    <div>hello world</div>,
     document.getElementById('app')
 );
