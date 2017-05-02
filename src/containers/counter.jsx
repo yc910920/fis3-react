@@ -32,6 +32,7 @@ export default class Counter extends Component {
 
     render() {
         let { count } = this.state;
+        let { handleAdd, handleSubtract } = this.methods;
         return (
             <div>
                 <div>
