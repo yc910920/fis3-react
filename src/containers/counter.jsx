@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 
 
 
-export class Counter extends Component {
+export default class Counter extends Component {
     state = {
         count: 0
     };
