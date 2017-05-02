@@ -36,8 +36,8 @@ export default class Counter extends Component {
         return (
             <div>
                 <div>
-                    <Button size="small"> + </Button>&nbsp;
-                    <Button size="small"> - </Button>&nbsp;
+                    <Button size="small" onClick={handleAdd}> + </Button>&nbsp;
+                    <Button size="small" onClick={handleSubtract}> - </Button>&nbsp;
                 </div>
                 <div>
                     { count }
