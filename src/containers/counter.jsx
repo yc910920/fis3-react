@@ -17,9 +17,9 @@ export default class Counter extends Component {
 
 
     get methods() {
-        const that = this;
-        const state = this.state;
-        const setState = this.setState.bind(this);
+        let that = this;
+        let state = this.state;
+        let setState = this.setState.bind(this);
         return {
             handleAdd() {
                 setState({ count: ++state.count });
