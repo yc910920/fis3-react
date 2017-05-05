@@ -27,6 +27,7 @@
         "antd": "^2.9.3",
         "buffer": "^5.0.6",
         "immutable": "^3.8.1",
+        "is-buffer": "^1.1.5",
         "moment": "^2.18.1",
         "react": "^15.5.4",
         "react-dom": "^15.5.4",
