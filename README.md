@@ -19,6 +19,8 @@
 
 
 #### commit code
-`1. ( 资源构建 ) npm run build `
+`1. ( 资源构建 ) npm run build`
 
-`2. ( 提交代码 ) npm run commit `
+`2. ( 提交代码本地仓库 ) npm run commit`
+
+`3. ( 提交代码远程仓库 ) npm run push | git push`
