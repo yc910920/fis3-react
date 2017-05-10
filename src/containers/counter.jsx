@@ -21,13 +21,11 @@ export default class Counter extends Component {
         const { props } = this;
         return {
             handleAdd() {
-                if ( state.count >= state.countMax ) return message.warn('别他妈的点了.');
-                setState({ count: ++state.count });
+                if ( props.count >= props.countMax ) return message.warn('别他妈的点了.');
             },
 
             handleSubtract() {
-                if ( state.count <= state.countMin ) return message.warn('别他妈的点了.');
-                setState({ count: --state.count });
+                if ( props.count <= props.countMin ) return message.warn('别他妈的点了.');
             }
         };   
     }
