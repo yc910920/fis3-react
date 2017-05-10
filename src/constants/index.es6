@@ -5,7 +5,7 @@
  */
 export default {
     // 加减器
-    counter: {
+    counterActionType: {
         COUNTER_ADD: 'COUNTER_ADD',
         COUNTER_SUBTRACT: 'COUNTER_SUBTRACT',
     }
