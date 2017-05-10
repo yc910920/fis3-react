@@ -12,7 +12,7 @@ const initialState = {
 
 export default function counterReducer(state = initialState, action) {
     switch (action.type) {
-        case 'COUNTER_ADD':
+        case counterActionType.COUNTER_ADD:
             return {
                 ...state,
                 ...{
