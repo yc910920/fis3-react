@@ -5,9 +5,9 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ActionType from '/src/constants';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { actionTypes } from '/src/constants';
 import { Button, Progress, message } from 'antd';
 
 
