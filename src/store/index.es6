@@ -1,5 +1,6 @@
 /**
  * @file store.es6
+ * @desc init store
  * @email 99874405@qq.com
  */
 import { createStore, combineReducers } from 'redux';

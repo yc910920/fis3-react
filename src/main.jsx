@@ -1,5 +1,6 @@
 /**
  * @file main.jsx
+ * @desc module 入口
  * @email 99874405@qq.com
  */
 import React, { Component } from 'react';
