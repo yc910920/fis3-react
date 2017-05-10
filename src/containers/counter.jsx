@@ -24,6 +24,7 @@ export default class Counter extends Component {
             // +
             handleAdd() {
                 if ( props.count >= props.countMax ) return message.warn('别他妈的点了.');
+                props.add();
             },
 
             // -
