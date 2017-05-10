@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 import { Button, Progress, message } from 'antd';
 
 
-@connect(state => (state.counter), dispatch => bindActionCreators({ add: () => ({type: '+'}) }, dispatch))
+@connect(state => (state.counter), dispatch => bindActionCreators({ add: () => ({type: 'COUNTER_ADD'}) }, dispatch))
 export default class Counter extends Component {
     componentDidMount() {
         console.log(this);
