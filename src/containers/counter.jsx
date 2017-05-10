@@ -9,6 +9,7 @@ import { connect } from 'react-redux';
 import { actionTypes } from '/src/constants';
 import { addAction, subtractAction, fetchInterfaceTestAction } from '/src/actions/counter';
 import { Button, Progress, message } from 'antd';
+import '/src/api/_fetch';
 
 
 
