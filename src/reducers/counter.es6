@@ -22,6 +22,14 @@ export default function counterReducer(state = initialState, action) {
                 }
             };
 
+        case counterActionType.COUNTER_SUBTRACT:
+            return {
+                ...state,
+                ...{
+                    count: state.count - 1
+                }
+            };
+
         default:
             return state;
     }
