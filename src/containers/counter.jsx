@@ -24,6 +24,7 @@ import { Button, Progress, message } from 'antd';
     ), dispatch)
 )
 export default class extends Component {
+
     get methods() {
         const that = this;
         const { props } = this;
