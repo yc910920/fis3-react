@@ -2,8 +2,9 @@
  * @module counter
  * @author 小虎牙
  */
-import { actionTypes } from '/src/constants';
+import { message } from 'antd';
 import { fetch, API } from '/src/api';
+import { actionTypes } from '/src/constants';
 
 
 /**
@@ -45,10 +46,10 @@ export function fetchInterfaceTestAction(param) {
     return (dispatch, getState) => {
         fetch.get(API.T, '?name=shanchen&age=22')
              .then(res => {
-                console.log(res);
+                 console.log(res);
              })
              .catch(exc => {
-                console.log(exc);
+                 message.error(exc.status, exc.statusText);
              });
     }
 }
