@@ -21,7 +21,13 @@ export default {
                             return res.json();
                         }
                         else {
-                            console.log(res);
+                            reject(
+                                { 
+                                    url: res.url, 
+                                    status: res.status, 
+                                    statusText: res.statusText
+                                }
+                            );
                         }
                     }
                 )
