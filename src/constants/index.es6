@@ -4,5 +4,9 @@
  * @email 99874405@qq.com
  */
 export default {
-    
+    // 加减器
+    counter: {
+        COUNTER_ADD: 'COUNTER_ADD',
+        COUNTER_SUBTRACT: 'COUNTER_SUBTRACT',
+    }
 };
