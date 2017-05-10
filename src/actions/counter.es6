@@ -49,7 +49,7 @@ export function fetchInterfaceTestAction(param) {
                  console.log(res);
              })
              .catch(exc => {
-                 message.error(exc.status, exc.statusText);
+                 message.error(exc.status + ' > ' + exc.statusText);
              });
     }
 }
