@@ -19,4 +19,4 @@ ReactDOM.render(
     document.getElementById('app')
 );
 // console.log(Store);
-console.log(store);
+console.log(store.getState());
