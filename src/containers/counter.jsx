@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import { Button, Progress, message } from 'antd';
 
 
-
+@connect(state => {}, dispatch => {})
 export default class extends Component {
 
     state = {
