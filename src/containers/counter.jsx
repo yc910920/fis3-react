@@ -13,6 +13,7 @@ import { Button, Progress, message } from 'antd';
 
 
 
+// connect: injection into components store
 @connect(
     state => state.counter,
     dispatch => bindActionCreators((
