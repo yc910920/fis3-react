@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { actionTypes } from '/src/constants';
-import { addAction, subtractAction } from '/src/actions';
+import { addAction, subtractAction } from '/src/actions/counter';
 import { Button, Progress, message } from 'antd';
 
 
