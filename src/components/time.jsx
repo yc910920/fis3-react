@@ -13,3 +13,8 @@ import { Button, Progress, message } from 'antd';
 
 
 // connect: injection into components store
+export default class extends Component {
+    render() {
+        return <div>{Date.now()}</div>
+    }
+}
