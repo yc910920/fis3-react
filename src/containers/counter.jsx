@@ -5,11 +5,12 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Button, Progress, message } from 'antd';
 
 
-@connect(state => (state.counter), dispatch => {})
+@connect(state => (state.counter), dispatch => bindActionCreators({ a: function() {} }, dispatch))
 export default class Counter extends Component {
     componentDidMount() {
         console.log(this);
