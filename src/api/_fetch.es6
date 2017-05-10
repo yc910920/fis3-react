@@ -17,18 +17,14 @@ export default {
                     (url + '?' + param).replace(/\?{2,}/, '?')
                 ).then(
                     (res) => {
-                        if (res.ok) {
-                            return res.json();
-                        }
-                        else {
-                            reject(
-                                { 
-                                    url: res.url, 
-                                    status: res.status, 
-                                    statusText: res.statusText
-                                }
-                            );
-                        }
+                        if (res.ok) return res.json();
+                        return reject(
+                            {
+                                url: res.url, 
+                                status: res.status, 
+                                statusText: res.statusText
+                            }
+                        );
                     }
                 )
             });
