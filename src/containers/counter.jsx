@@ -11,12 +11,9 @@ import { Button, Progress, message } from 'antd';
 
 @connect(state => (state.counter), dispatch => {})
 export default class Counter extends Component {
-
-    state = {
-        count: 98,
-        countMax: 100,
-        countMin: 0
-    };
+    componentDidMount() {
+        console.log(this);
+    }
 
 
     get methods() {
@@ -37,13 +34,7 @@ export default class Counter extends Component {
     }
 
 
-    componentDidMount() {
-        console.log(this);
-    }
-
-
     render() {
-        let { count } = this.state;
         let { handleAdd, handleSubtract } = this.methods;
         return (
             <div>
@@ -52,7 +43,7 @@ export default class Counter extends Component {
                     <Button size="small" onClick={handleSubtract}> - </Button>&nbsp;&nbsp;
                 </div>
                 <br />
-                <Progress type="circle" width={80} percent={count} />
+                <Progress type="circle" width={80} percent={this.props.count} />
             </div>
         );
     }
