@@ -33,3 +33,15 @@ export function subtractAction() {
         )
     }
 }
+
+
+/**
+ * @method 接口测试
+ * @param  {String} param
+ * @return undefined
+ */
+export function fetchInterfaceTestAction(param) {
+    return (dispatch, getState) => {
+        console.log(param);
+    }
+}
