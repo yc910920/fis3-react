@@ -8,8 +8,15 @@ import { Map } from 'immutable';
 
 
 
-// connect: injection into components store
 export default class extends Component {
+    
+    shouldComponentUpdate(nextProps, nextState) {
+        return !(
+            Map(nextProps) === Map(this.props)
+        );
+    }
+
+
     render() {
         return <div>{Date.now()}</div>
     }
