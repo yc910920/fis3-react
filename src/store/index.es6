@@ -4,13 +4,7 @@
  */
 import { createStore } from 'redux';
 export default {
-    configure() {
-        return createStore(
-            function reducer() {
+    store: function configure() {
 
-            },
-            [1, 2, 3, 4, 5]
-        );
-    },
-    store: this.configure()
+    }
 };
