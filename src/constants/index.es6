@@ -3,10 +3,8 @@
  * @desc constants 入口
  * @email 99874405@qq.com
  */
-export default {
+export const ACTION = {
     // 加减器
-    counterAction: {
-        COUNTER_ADD: 'COUNTER_ADD',
-        COUNTER_SUBTRACT: 'COUNTER_SUBTRACT',
-    }
+    COUNTER_ADD: 'COUNTER_ADD',
+    COUNTER_SUBTRACT: 'COUNTER_SUBTRACT',
 };
