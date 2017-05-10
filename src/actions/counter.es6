@@ -1,28 +1,35 @@
 /**
- * @file counter.es6
- * @desc 加减器
- * @email 99874405@qq.com
+ * @module counter.es6
+ * @author 小虎牙
  */
 import { actionTypes } from '/src/constants';
 
 
 /**
- * @desc 递增
- * @type method
+ * @method 递增
+ * @return undefined
  */
 export function addAction() {
-    return {
-        type: actionTypes.COUNTER_ADD
-    };
+    return (dispatch, getState) => {
+        dispatch(
+            {
+                type: actionTypes.COUNTER_ADD
+            }
+        )
+    }
 }
 
 
 /**
- * @desc 递减
- * @type method
+ * @method 递减
+ * @return undefined
  */
 export function subtractAction() {
-    return {
-        type: actionTypes.COUNTER_SUBTRACT
-    };
+    return (dispatch, getState) => {
+        dispatch(
+            {
+                type: actionTypes.COUNTER_SUBTRACT
+            }
+        )
+    }
 }
