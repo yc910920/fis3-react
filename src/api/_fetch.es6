@@ -46,7 +46,10 @@ export default {
         if (url) {
             return new Promise((resolve, reject) => {
                 fetch(
-                    addTimeStamp(url, param)
+                    addTimeStamp(url, param),
+                    {
+                        method: 'POST'
+                    }
                 ).then(
                     (res) => {
                         if (res.ok) return res.json();
