@@ -22,5 +22,15 @@ export default {
      */
     post(url, param, cb) {
 
+    },
+
+    /**
+     * @method jsonp
+     * @param  {String} url
+     * @param  {Object} param
+     * @param  {Function} cb
+     */
+    jsonp(url, param, cb) {
+
     }
 };
