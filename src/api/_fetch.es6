@@ -5,7 +5,7 @@
 import 'whatwg-fetch';
 export default {
     /**
-     * @method GET request
+     * @method get
      * @param  {String} url
      * @param  {String} param
      * @param  {Function} cb
@@ -15,7 +15,7 @@ export default {
     },
 
     /**
-     * @method POST request
+     * @method post
      * @param  {String} url
      * @param  {Object} param
      * @param  {Function} cb
