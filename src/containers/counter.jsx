@@ -13,12 +13,7 @@ import { Button, Progress, message } from 'antd';
 
 
 
-@connect(state => state.counter, dispatch => bindActionCreators((
-    {
-        addAction,
-        subtractAction
-    }
-), dispatch))
+@connect(state => state.counter, dispatch => bindActionCreators({ addAction, subtractAction }, dispatch))
 export default class extends Component {
     componentDidMount() {
         // ...
