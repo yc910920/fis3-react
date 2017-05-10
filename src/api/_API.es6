@@ -1,5 +1,5 @@
 /**
- * @module API
+ * @module _API
  * @author 小虎牙
  */
 export default {
