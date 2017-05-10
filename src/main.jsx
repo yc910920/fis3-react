@@ -11,7 +11,7 @@ import { configureStore } from './store';
 
 
 ReactDOM.render(
-    <Provider>
+    <Provider store={configureStore()}>
         <Counter />
     </Provider>,
     document.getElementById('app')
