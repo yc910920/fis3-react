@@ -17,9 +17,8 @@ export default class Counter extends Component {
 
 
     get methods() {
-        let that = this;
-        let state = this.state;
-        let setState = this.setState.bind(this);
+        const that = this;
+        const { props } = this;
         return {
             handleAdd() {
                 if ( state.count >= state.countMax ) return message.warn('别他妈的点了.');
@@ -35,15 +34,15 @@ export default class Counter extends Component {
 
 
     render() {
-        let { handleAdd, handleSubtract } = this.methods;
+        const { props, methods } = this;
         return (
             <div>
                 <div>
-                    <Button size="small" onClick={handleAdd}> + </Button>&nbsp;&nbsp;
-                    <Button size="small" onClick={handleSubtract}> - </Button>&nbsp;&nbsp;
+                    <Button size="small" onClick={methods.handleAdd}> + </Button>&nbsp;&nbsp;
+                    <Button size="small" onClick={methods.handleSubtract}> - </Button>&nbsp;&nbsp;
                 </div>
                 <br />
-                <Progress type="circle" width={80} percent={this.props.count} />
+                <Progress type="circle" width={80} percent={props.count} />
             </div>
         );
     }
