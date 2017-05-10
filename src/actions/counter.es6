@@ -43,6 +43,6 @@ export function subtractAction() {
  */
 export function fetchInterfaceTestAction(param) {
     return (dispatch, getState) => {
-        console.log(fetch, API);
+        fetch.get(API.T, `?t=${Date.now()}`);
     }
 }
