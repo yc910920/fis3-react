@@ -3,18 +3,10 @@
  * @desc 加减器
  * @email 99874405@qq.com
  */
-import { counterActionType } from '/src/constants';
-const initialState = {
-    count: 98,
-    countMax: 100,
-    countMin: 0
-};
-
-
-
-export default function counterReducer(state = initialState, action) {
+import { actionTypes } from '/src/constants';
+export default function counterReducer(state, action) {
     switch (action.type) {
-        case counterActionType.COUNTER_ADD:
+        case actionTypes.COUNTER_ADD:
             return {
                 ...state,
                 ...{
@@ -22,7 +14,7 @@ export default function counterReducer(state = initialState, action) {
                 }
             };
 
-        case counterActionType.COUNTER_SUBTRACT:
+        case actionTypes.COUNTER_SUBTRACT:
             return {
                 ...state,
                 ...{
@@ -31,6 +23,12 @@ export default function counterReducer(state = initialState, action) {
             };
 
         default:
-            return state;
+            return state || (
+                {
+                    count: 98,
+                    countMax: 100,
+                    countMin: 0
+                }
+            );
     }
 };
