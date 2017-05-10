@@ -1,7 +1,6 @@
 /**
- * @file api.es6
- * @desc api 入口
- * @email 99874405@qq.com
+ * @module api.es6
+ * @author 小虎牙
  */
 export default {
     
