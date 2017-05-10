@@ -31,12 +31,12 @@ export default class extends Component {
         return {
             handleAdd() {
                 if ( props.count >= props.countMax ) return message.warn('别他妈的点了.');
-                props.add();
+                props.addAction();
             },
             
             handleSubtract() {
                 if ( props.count <= props.countMin ) return message.warn('别他妈的点了.');
-                props.subtract();
+                props.subtractAction();
             }
         };   
     }
