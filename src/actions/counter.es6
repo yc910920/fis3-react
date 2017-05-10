@@ -3,7 +3,7 @@
  * @author 小虎牙
  */
 import { actionTypes } from '/src/constants';
-import { API, fetch } from '/src/api';
+import { fetch, API } from '/src/api';
 
 
 /**
