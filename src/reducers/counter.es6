@@ -11,5 +11,11 @@ const initialState = {
 
 
 export default function counterReducer(state = initialState, action) {
-    return state;
+    switch (action.type) {
+        case 'COUNTER_ADD':
+            return ;
+
+        default:
+            return state;
+    }
 };
