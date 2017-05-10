@@ -43,11 +43,11 @@ export default class Counter extends Component {
         return (
             <div>
                 <div>
-                    <Button size="small" onClick={ handleAdd }> + </Button>&nbsp;&nbsp;
-                    <Button size="small" onClick={ handleSubtract }> - </Button>&nbsp;&nbsp;
+                    <Button size="small" onClick={handleAdd}> + </Button>&nbsp;&nbsp;
+                    <Button size="small" onClick={handleSubtract}> - </Button>&nbsp;&nbsp;
                 </div>
                 <br />
-                <Progress type="circle" width={ 80 } percent={ count } />
+                <Progress type="circle" width={80} percent={count} />
             </div>
         );
     }
