@@ -4,6 +4,7 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Time from '/src/components/time';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { actionTypes } from '/src/constants';
@@ -57,6 +58,7 @@ export default class extends Component {
                 </div>
                 <br />
                 <Progress type="circle" width={80} percent={props.count} />
+                <Time />
             </div>
         );
     }
