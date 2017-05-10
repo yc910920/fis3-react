@@ -4,7 +4,9 @@
  * @email 99874405@qq.com
  */
 const initialState = {
-    a: 'a'
+    count: 98,
+    countMax: 100,
+    countMin: 0
 };
 
 
