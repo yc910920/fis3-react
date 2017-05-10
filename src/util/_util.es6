@@ -2,7 +2,13 @@
  * @module _util
  * @author 小虎牙
  */
+import moment from 'moment';
 export default {
+    /**
+     * @method moment, API见 node_modules/moment/README.md, 【日期格式化】
+     */
+    moment,
+
     /**
      * @method addTimeStamp 请求接口路径添加时间戳
      * @param  {String} url
