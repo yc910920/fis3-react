@@ -5,12 +5,13 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
 import { Button, Progress, message } from 'antd';
 
 
 
 // Not use redux
-export default class Counter extends Component {
+export default class extends Component {
 
     state = {
         count: 98,
