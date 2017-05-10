@@ -12,7 +12,9 @@ export default {
      */
     get(url = '', param = '', cb) {
         if (url === '') throw new Error('miss url');
-        
+        fetch(
+            (url + '?' + param).replace(/\?{2,}/, '?')
+        )
     },
 
     /**
