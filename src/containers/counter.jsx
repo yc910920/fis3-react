@@ -32,6 +32,7 @@ export default class Counter extends Component {
             // -
             handleSubtract() {
                 if ( props.count <= props.countMin ) return message.warn('别他妈的点了.');
+                props.subtract();
             }
         };   
     }
