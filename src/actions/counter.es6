@@ -6,7 +6,10 @@
 import { actionTypes } from '/src/constants';
 
 
-// 递增
+/**
+ * @desc 递增
+ * @type method
+ */
 export function addAction() {
     return {
         type: actionTypes.COUNTER_ADD
@@ -14,7 +17,10 @@ export function addAction() {
 }
 
 
-// 递减
+/**
+ * @desc 递减
+ * @type method
+ */
 export function subtractAction() {
     return {
         type: actionTypes.COUNTER_SUBTRACT
