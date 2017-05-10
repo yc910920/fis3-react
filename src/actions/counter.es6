@@ -45,10 +45,10 @@ export function fetchInterfaceTestAction(param) {
     return (dispatch, getState) => {
         fetch.get(API.T, '?name=shanchen&age=22')
              .then(res => {
-                
+                console.log(res);
              })
              .catch(exc => {
-
+                console.log(exc);
              });
     }
 }
