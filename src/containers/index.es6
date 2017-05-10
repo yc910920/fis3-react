@@ -1,7 +1,6 @@
 /**
- * @file containers.es6
- * @desc containers 入口
- * @email 99874405@qq.com
+ * @module containers
+ * @author 小虎牙
  */
 // 加减器
 import Counter from './counter';

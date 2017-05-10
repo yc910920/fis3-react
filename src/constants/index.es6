@@ -1,7 +1,6 @@
 /**
- * @file constants.es6
- * @desc constants 入口
- * @email 99874405@qq.com
+ * @module constants
+ * @author 小虎牙
  */
 export const actionTypes = {
     // 加减器

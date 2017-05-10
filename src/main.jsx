@@ -1,7 +1,6 @@
 /**
- * @file main.jsx
- * @desc module 入口
- * @email 99874405@qq.com
+ * @module main
+ * @author 小虎牙
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';

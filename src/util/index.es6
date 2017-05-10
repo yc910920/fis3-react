@@ -1,7 +1,6 @@
 /**
- * @file util.es6
- * @desc 工具库
- * @email 99874405@qq.com
+ * @module util
+ * @author 小虎牙
  */
 export default {
     

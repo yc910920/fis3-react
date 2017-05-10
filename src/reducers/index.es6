@@ -1,7 +1,6 @@
 /**
- * @file reducers.es6
- * @desc reducers 入口
- * @email 99874405@qq.com
+ * @module reducers
+ * @author 小虎牙
  */
 // 加减器
 import counterReducer from './counter';

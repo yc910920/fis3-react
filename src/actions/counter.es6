@@ -1,5 +1,5 @@
 /**
- * @module counter.es6
+ * @module counter
  * @author 小虎牙
  */
 import { actionTypes } from '/src/constants';

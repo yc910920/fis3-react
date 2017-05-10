@@ -1,7 +1,6 @@
 /**
- * @file counter.jsx
- * @desc 加减器
- * @email 99874405@qq.com
+ * @module counter
+ * @author 小虎牙
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
