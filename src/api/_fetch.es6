@@ -15,7 +15,7 @@ export default {
         if (url) {
             return new Promise((resolve, reject) => {
                 fetch(
-                    (url + '?' + param)
+                    (url + '?' + param + '&t=' + Date.now()).replace(/\?\&/, '?')
                 ).then(
                     (res) => {
                         if (res.ok) return res.json();
