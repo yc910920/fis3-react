@@ -27,6 +27,8 @@ export default {
                             }
                         );
                     }
+                ).then(
+                    (res) => resolve(res)
                 )
             });
         }
