@@ -11,7 +11,8 @@ export default {
      * @param  {Function} cb
      */
     get(url, param, cb) {
-
+        if (!url) throw new Error('miss url');
+        
     },
 
     /**
