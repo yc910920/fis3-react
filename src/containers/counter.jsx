@@ -10,7 +10,7 @@ import { Button, Progress, message } from 'antd';
 
 
 @connect(state => {}, dispatch => {})
-export default class extends Component {
+export default class Counter extends Component {
 
     state = {
         count: 98,
