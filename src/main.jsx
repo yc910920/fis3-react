@@ -10,10 +10,10 @@ import { Counter } from './containers';
 import { configureStore } from './store';
 
 
+
 ReactDOM.render(
     <Provider store={configureStore()}>
         <Counter />
     </Provider>,
     document.getElementById('app')
 );
-// console.log(configureStore().getState());
