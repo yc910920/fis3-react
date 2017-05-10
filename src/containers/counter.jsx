@@ -3,9 +3,9 @@
  * @desc 加减器
  * @email 99874405@qq.com
  */
-import ActionType from '/src/constants';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import ActionType from '/src/constants';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Button, Progress, message } from 'antd';
