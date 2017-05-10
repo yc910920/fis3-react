@@ -8,7 +8,6 @@ export default {
     configureStore() {
         return createStore(
             combineReducers(reducers),
-            [1, 2, 3]
         );
     }
 };

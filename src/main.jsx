@@ -19,4 +19,5 @@ ReactDOM.render(
     document.getElementById('app')
 );
 // console.log(Store);
-console.log(configureStore());
+// console.log(configureStore());
+console.log(configureStore().getState());
