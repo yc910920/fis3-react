@@ -5,6 +5,10 @@
 import { createStore } from 'redux';
 export default {
     configureStore() {
-        
+        return createStore(
+            function reducer() {
+                
+            }
+        );
     }
 };
