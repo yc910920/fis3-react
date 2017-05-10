@@ -13,7 +13,9 @@ export default {
     get(url = '', param = '', cb) {
         if (url) {
             return new Promise((resolve, reject) => {
-
+                fetch(
+                    (url + '?' + param).splice(/\?{2,}/, '?')
+                )
             });
         }
         throw new Error('miss url');
