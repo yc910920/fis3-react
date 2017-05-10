@@ -15,6 +15,10 @@ export default {
             return new Promise((resolve, reject) => {
                 fetch(
                     (url + '?' + param).replace(/\?{2,}/, '?')
+                ).then(
+                    if ((res.status >= 200 && res.status < 300) || res.status === 304) {
+                        
+                    }
                 )
             });
         }
