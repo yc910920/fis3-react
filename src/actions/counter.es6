@@ -7,7 +7,7 @@ import { actionTypes } from '/src/constants';
 
 
 // 递增
-export function add() {
+export function addAction() {
     return {
         type: actionTypes.COUNTER_ADD
     };
@@ -15,7 +15,7 @@ export function add() {
 
 
 // 递减
-export function subtract() {
+export function subtractAction() {
     return {
         type: actionTypes.COUNTER_SUBTRACT
     };
