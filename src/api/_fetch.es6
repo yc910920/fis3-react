@@ -3,6 +3,7 @@
  * @author 小虎牙
  */
 import { message } from 'antd';
+import { addTimeStamp } from '/src/util';
 import 'whatwg-fetch';
 export default {
     /**
@@ -15,7 +16,7 @@ export default {
         if (url) {
             return new Promise((resolve, reject) => {
                 fetch(
-                    (url + '?' + param + '&t=' + Date.now()).replace(/(\?+\&)|(\?+)/, '?')
+                    addTimeStamp(url, param)
                 ).then(
                     (res) => {
                         if (res.ok) return res.json();
