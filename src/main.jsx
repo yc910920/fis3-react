@@ -5,20 +5,15 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { Counter } from './containers';
 import { configureStore } from './store';
-import { 
-    Counter
- } from './containers';
-
 
 
 ReactDOM.render(
     <div>
-        hello world
         <Counter />
     </div>,
     document.getElementById('app')
 );
-// console.log(Store);
-// console.log(configureStore());
 console.log(configureStore().getState());
