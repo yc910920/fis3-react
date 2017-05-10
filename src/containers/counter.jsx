@@ -1,5 +1,5 @@
 /**
- * @file main.jsx
+ * @file counter.jsx
  * @desc 加减器
  * @email 99874405@qq.com
  */
@@ -38,7 +38,7 @@ export default class extends Component {
 
 
     componentDidMount() {
-        
+        console.log(this);
     }
 
 
