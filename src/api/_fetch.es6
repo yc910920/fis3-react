@@ -43,7 +43,27 @@ export default {
      * @param  {Function} cb
      */
     post(url, param, cb) {
-
+        if (url) {
+            return new Promise((resolve, reject) => {
+                fetch(
+                    addTimeStamp(url, param)
+                ).then(
+                    (res) => {
+                        if (res.ok) return res.json();
+                        return reject(
+                            {
+                                url: res.url, 
+                                status: res.status, 
+                                statusText: res.statusText
+                            }
+                        );
+                    }
+                ).then(
+                    (res) => resolve(res)
+                )
+            });
+        }
+        message.error('miss url');
     },
 
     /**
