@@ -11,19 +11,12 @@ export default {
      * @param  {Function} cb
      */
     get(url = '', param = '', cb) {
-        if (url === '') throw new Error('miss url');
-        fetch(
-            (url + '?' + param).replace(/\?{2,}/, '?')
-        ).then(
-            res => ({
-                status: res.status,
-                response: res.json()
-            })
-        ).then(
-            res => {
-                console.log(res);
-            }
-        )
+        if (url) {
+            return new Promise((resolve, reject) => {
+
+            });
+        }
+        throw new Error('miss url');
     },
 
     /**
