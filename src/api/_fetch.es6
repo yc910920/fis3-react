@@ -14,6 +14,15 @@ export default {
         if (url === '') throw new Error('miss url');
         fetch(
             (url + '?' + param).replace(/\?{2,}/, '?')
+        ).then(
+            res => ({
+                status: res.status,
+                response: res.json()
+            })
+        ).then(
+            res => {
+                console.log(res);
+            }
         )
     },
 
