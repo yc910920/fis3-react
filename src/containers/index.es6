@@ -4,8 +4,6 @@
  */
 // 加减器
 import Counter from './counter';
-
-
 export default {
     Counter
 };
