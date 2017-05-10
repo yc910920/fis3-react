@@ -4,5 +4,5 @@
  */
 import actionTypes from './_actionTypes';
 export default {
-    ...actionTypes
+    actionTypes
 };
