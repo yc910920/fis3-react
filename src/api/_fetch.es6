@@ -2,6 +2,7 @@
  * @module _fetch
  * @author 小虎牙
  */
+import { message } from 'antd';
 import 'whatwg-fetch';
 export default {
     /**
@@ -29,7 +30,7 @@ export default {
                 )
             });
         }
-        throw new Error('miss url');
+        message.error('miss url');
     },
 
     /**
