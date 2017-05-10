@@ -2,14 +2,13 @@
  * @file store.es6
  * @email 99874405@qq.com
  */
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import { reducers } from './reducers';
 export default {
-    store: function configure() {
+    configureStore() {
         return createStore(
-            function reducer(state, action) {
-                return state;
-            },
+            combineReducers(reducers),
             [1, 2, 3]
         );
-    }()
+    }
 };
