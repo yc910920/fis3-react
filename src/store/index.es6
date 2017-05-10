@@ -5,6 +5,7 @@
  */
 import { createStore, combineReducers } from 'redux';
 import { reducers } from './reducers';
+import reduxThunk from 'redux-thunk';
 export default {
     configureStore() {
         return createStore(
