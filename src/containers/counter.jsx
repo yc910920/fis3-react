@@ -15,8 +15,8 @@ import { Button, Progress, message } from 'antd';
 
 @connect(state => state.counter, dispatch => bindActionCreators((
     {
-        add: e => ({type: actionTypes.COUNTER_ADD}),
-        subtract: e => ({type: actionTypes.COUNTER_SUBTRACT})
+        addAction,
+        subtractAction
     }
 ), dispatch))
 export default class extends Component {
