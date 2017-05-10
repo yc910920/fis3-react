@@ -16,9 +16,14 @@ export default {
                 fetch(
                     (url + '?' + param).replace(/\?{2,}/, '?')
                 ).then(
-                    // if ((res.status >= 200 && res.status < 300) || res.status === 304) {
-
-                    // }
+                    (res) => {
+                        if (res.ok) {
+                            return res.json();
+                        }
+                        else {
+                            console.log(res);
+                        }
+                    }
                 )
             });
         }
