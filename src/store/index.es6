@@ -3,9 +3,9 @@
  * @desc init store
  * @email 99874405@qq.com
  */
+import reduxThunk from 'redux-thunk';
 import { createStore, combineReducers } from 'redux';
 import { reducers } from './reducers';
-import reduxThunk from 'redux-thunk';
 export default {
     configureStore() {
         return createStore(
