@@ -37,6 +37,11 @@ export default class extends Component {
     }
 
 
+    componentDidMount() {
+        
+    }
+
+
     render() {
         let { count } = this.state;
         let { handleAdd, handleSubtract } = this.methods;
@@ -51,5 +56,4 @@ export default class extends Component {
             </div>
         );
     }
-
 };
