@@ -10,7 +10,6 @@ import { Button, Progress, message } from 'antd';
 
 
 
-// Not use redux
 export default class extends Component {
 
     state = {
