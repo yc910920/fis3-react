@@ -4,7 +4,7 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { store } from './store';
+import { configureStore } from './store';
 import { 
     Counter
  } from './containers';
@@ -19,4 +19,4 @@ ReactDOM.render(
     document.getElementById('app')
 );
 // console.log(Store);
-console.log(store.getState());
+console.log(configureStore());
