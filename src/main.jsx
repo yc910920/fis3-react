@@ -17,6 +17,8 @@ ReactDOM.render(
         <Router>
             <div>
                 <Route path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/counter" component={Counter} />
             </div>
         </Router>
     </Provider>,
