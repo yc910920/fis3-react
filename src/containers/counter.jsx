@@ -25,7 +25,7 @@ export default class extends Component {
         const { props } = this;
         return {
             updateTime() {
-                
+                setTimeout(props.updateTimeAction.bind(null, Date.now()), 1000);
             }
         };   
     }
