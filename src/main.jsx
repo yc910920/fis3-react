@@ -23,18 +23,18 @@ ReactDOM.render(
                     <div className="logo" />
                     <Menu mode="inline" theme="dark">
                         <SubMenu key="sub-01" title={<span><Icon type="appstore" /><span>menu 01</span></span>}>
-                            <Menu.Item key="sub-01-01">1</Menu.Item>
-                            <Menu.Item key="sub-01-02">2</Menu.Item>
-                            <Menu.Item key="sub-01-03">3</Menu.Item>
+                            <Menu.Item key="sub-01-01"><Link to="/">root</Link></Menu.Item>
+                            <Menu.Item key="sub-01-02"><Link to="/home">home</Link></Menu.Item>
+                            <Menu.Item key="sub-01-03"><Link to="/about">about</Link></Menu.Item>
                         </SubMenu>
                     </Menu>
                 </Sider>
                 <Layout>
                     <Header>此时你需要一个大大的微笑。并告诉自己，你可以的。</Header>
                     <Content>
-                        <Route exact path="/" component={Counter} />
-                        <Route path="/home" component={Home} />
-                        <Route path="/about" component={About} />
+                        <Route path="/" exact component={Counter} />
+                        <Route path="/home"   component={Home} />
+                        <Route path="/about"  component={About} />
                     </Content>
                     <Footer>蚂蚁金服体验技术部出品</Footer>
                 </Layout>
