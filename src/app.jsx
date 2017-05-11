@@ -27,7 +27,17 @@ export default class extends Component {
      * @desc 组件即将装载
      */
     componentWillMount() {
-        
+        if (sessionStorage.state) {
+            
+        }
+    }
+
+
+    /**
+     * @desc 组件即将卸载
+     */
+    componentWillUnMount() {
+        delete sessionStorage.state;
     }
 
 
