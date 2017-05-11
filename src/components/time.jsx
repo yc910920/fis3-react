@@ -45,7 +45,6 @@ export default class extends Component {
 
     render() {
         const { props, methods } = this;
-        methods.updaterTime();
         return (
             <div>
                 {props.currentTime}
