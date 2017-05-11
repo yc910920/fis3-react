@@ -1,5 +1,5 @@
 /**
- * @module t
+ * @module about
  * @author 小虎牙
  */
 import React, { Component } from 'react';
@@ -8,10 +8,10 @@ import { Map } from 'immutable';
 
 
 
-export default function T() {
+export default function Hello() {
     return (
         <div>
-            {Date.now()}
+            {Date.now()} about
         </div>
     );
 }

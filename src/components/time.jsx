@@ -18,6 +18,10 @@ export default class extends Component {
 
 
     render() {
-        return <div>{Date.now()}</div>
+        return (
+            <div>
+                {Date.now()} time
+            </div>
+        );
     }
 }
