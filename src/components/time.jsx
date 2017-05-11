@@ -23,9 +23,10 @@ export default class extends Component {
 
 
     render() {
+        const { props } = this;
         return (
             <div>
-                {this.state.date}
+                {props.currentTime}
             </div>
         );
     }
