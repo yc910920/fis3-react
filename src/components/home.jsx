@@ -13,6 +13,9 @@ import { moment } from '/src/util';
 
 
 export default function Home({ match }) {
+    /**
+     * @desc JSX
+     */
     return (
         <div>
             {Date.now()} home
