@@ -24,6 +24,14 @@ export default class extends Component {
 
 
     /**
+     * @desc 组件即将装载
+     */
+    componentWillMount() {
+        
+    }
+
+
+    /**
      * @desc JSX
      */
     render() {
