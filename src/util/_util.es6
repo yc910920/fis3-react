@@ -16,6 +16,6 @@ export default {
      * @return {String}
      */
     addTimeStamp(url, param) {
-        return (url + '?' + param + '&t=' + Date.now()).replace(/(\?+\&)|(\?+)/, '?');
+        return (url + '?' + param + '&t=' + Date.now()).replace(/(\?{1,}\&)|(\?{2,})/, '?');
     }
 };
