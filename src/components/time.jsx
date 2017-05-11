@@ -12,6 +12,7 @@ import { moment } from '/src/util';
 
 
 
+// injection into components store
 @connect(
     state => state.counter,
     dispatch => bindActionCreators(counterAction, dispatch)
