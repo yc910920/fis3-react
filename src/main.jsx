@@ -22,7 +22,7 @@ ReactDOM.render(
                     <li><Link to="/counter">Counter</Link></li>
                 </ul>
                 <hr />
-                <Route path="/" component={Home} />
+                <Route path="/" component={Home} exact />
                 <Route path="/about" component={About} />
                 <Route path="/counter" component={Counter} />
             </div>
