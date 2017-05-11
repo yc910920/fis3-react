@@ -10,7 +10,7 @@ export default {
     moment,
 
     /**
-     * @method addTimeStamp 请求接口路径添加时间戳
+     * @method 请求接口路径添加时间戳
      * @param  {String} url
      * @param  {String} param
      * @return {String}

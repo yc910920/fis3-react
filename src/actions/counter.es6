@@ -41,7 +41,7 @@ export function subtractAction() {
  * @method 更新日期
  * @return undefined
  */
-export function subtractAction() {
+export function updateTimeAction() {
     return (dispatch, getState) => {
         dispatch(
             {
