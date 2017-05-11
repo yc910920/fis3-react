@@ -22,10 +22,7 @@ export default class extends Component {
         const { props } = this;
         return {
             updaterTime() {
-                // setTimeout(
-                    props.updateTimeAction(),
-                    1000
-                // );
+                props.updateTimeAction();
             }
         };
     }
