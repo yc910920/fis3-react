@@ -16,9 +16,7 @@ ReactDOM.render(
     <Provider store={configureStore()}>
         <Router>
             <div>
-                <Home />
-                <About />
-                <Counter />
+                <Route path="/" component={Home} />
             </div>
         </Router>
     </Provider>,
