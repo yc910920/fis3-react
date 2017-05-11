@@ -24,7 +24,7 @@ export default class extends Component {
                             <div className="logo">
                                 atlucky.com
                             </div>
-                            <Menu mode="inline" theme="dark" id="menu">
+                            <Menu id="menu" mode="inline" theme="dark">
                                 <SubMenu key="sub-01" title={<span><Icon type="appstore" /><span>menu 01</span></span>}>
                                     <Menu.Item key="sub-01-01"><Link to="/">root</Link></Menu.Item>
                                     <Menu.Item key="sub-01-02"><Link to="/home">home</Link></Menu.Item>
