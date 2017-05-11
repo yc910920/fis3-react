@@ -8,8 +8,8 @@ import { reducers } from '/src/reducers';
 
 
 /**
- * @method 初始化一个状态机
- * @return {String} store
+ * @method initial state
+ * @return {String}
  */
 export default function _configureStore() {
     return createStore(
