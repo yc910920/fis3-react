@@ -13,6 +13,15 @@ import { Map } from 'immutable';
     state => state.counter
 )
 export default class extends Component {
+    
+    get methods() {
+        return {
+            updaterTime() {
+                
+            }
+        };
+    }
+
 
     shouldComponentUpdate(nextProps, nextState) {
         return (
@@ -22,7 +31,7 @@ export default class extends Component {
 
 
     componentDidMount() {
-        
+
     }
 
 
