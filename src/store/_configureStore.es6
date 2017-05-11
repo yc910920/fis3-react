@@ -9,7 +9,7 @@ import { reducers } from '/src/reducers';
 
 /**
  * @method initial state
- * @return {String}
+ * @return object
  */
 export default function _configureStore() {
     return createStore(
