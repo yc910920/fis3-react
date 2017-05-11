@@ -35,4 +35,4 @@ export default function counterReducer(state, action) {
                 currentTime: moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')
             };
     }
-};
+}
