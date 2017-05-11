@@ -16,8 +16,8 @@ const  { SubMenu } = Menu;
 
 
 ReactDOM.render(
-    <Provider store={configureStore()}>
-        <Router id="router">
+    <Router>
+        <Provider store={configureStore()}>
             <Layout id="layout">
                 <Sider>
                     <div className="logo" />
@@ -39,7 +39,7 @@ ReactDOM.render(
                     <Footer>蚂蚁金服体验技术部出品</Footer>
                 </Layout>
             </Layout>
-        </Router>
-    </Provider>,
+        </Provider>
+    </Router>,
     document.getElementById('app')
 );
