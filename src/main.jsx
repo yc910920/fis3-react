@@ -4,10 +4,9 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Home from '/src/components/home';
-import About from '/src/components/about';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Home, About } from '/src/components';
 import { Counter } from '/src/containers';
 import { configureStore } from '/src/store';
 
