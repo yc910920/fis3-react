@@ -17,7 +17,9 @@ const  { Sider, Header, Content, Footer } = Layout;
 ReactDOM.render(
     <Provider store={configureStore()}>
         <Layout>
-            <Sider>Sider</Sider>
+            <Sider>
+                <div className="logo" />
+            </Sider>
             <Layout>
                 <Header>Header</Header>
                 <Content>Content</Content>
