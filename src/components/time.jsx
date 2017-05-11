@@ -37,7 +37,7 @@ export default class extends Component {
 
 
     render() {
-        const { props } = this;
+        const { props, methods } = this;
         return (
             <div>
                 {props.currentTime}
