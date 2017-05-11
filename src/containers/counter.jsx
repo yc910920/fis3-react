@@ -37,7 +37,7 @@ export default class extends Component {
     render() {
         const { props, methods } = this;
         return (
-            <div>
+            <div style={{padding: 30}}>
                 <div>
                     <Button size="small" disabled={props.count === props.countMax} onClick={props.addAction}> + </Button>&nbsp;&nbsp;
                     <Button size="small" disabled={props.count === props.countMin} onClick={props.subtractAction}> - </Button>&nbsp;&nbsp;
