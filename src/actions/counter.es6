@@ -39,6 +39,7 @@ export function subtractAction() {
 
 /**
  * @method 更新日期
+ * @param  String: payload
  * @return undefined
  */
 export function updateTimeAction(payload) {
@@ -55,7 +56,7 @@ export function updateTimeAction(payload) {
 
 /**
  * @method 接口测试
- * @param  {String} param
+ * @param  String: param
  * @return undefined
  */
 export function fetchInterfaceTestAction(param) {
