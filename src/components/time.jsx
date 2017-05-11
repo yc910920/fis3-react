@@ -4,8 +4,9 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Map } from 'immutable';
+import { counterAction } from '/src/actions';
 
 
 
@@ -43,6 +44,7 @@ export default class extends Component {
 
     render() {
         const { props, methods } = this;
+        methods.updaterTime();
         return (
             <div>
                 {props.currentTime}

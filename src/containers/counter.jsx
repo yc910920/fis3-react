@@ -8,7 +8,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Button, Progress, message } from 'antd';
 import { Time } from '/src/components';
-import { actionTypes } from '/src/constants';
 import { counterAction } from '/src/actions';
 
 
