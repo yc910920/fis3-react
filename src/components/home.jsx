@@ -12,11 +12,13 @@ import { moment } from '/src/util';
 
 
 
-export default function Home() {
-    console.log(arguments);
+export default function Home({ match }) {
     return (
         <div>
             {Date.now()} home
+            <div>
+                {match.url}
+            </div>
         </div>
     );
 }
