@@ -13,7 +13,7 @@ import { counterAction } from '/src/actions';
 
 
 
-// connect: injection into components store
+// injection into components store
 @connect(
     state => state.counter,
     dispatch => bindActionCreators(counterAction, dispatch)
