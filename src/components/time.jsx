@@ -19,7 +19,12 @@ export default class extends Component {
         const that = this;
         const { props } = this;
         return {
-            
+            updaterTime() {
+                // setTimeout(
+                    props.updateTimeAction(),
+                    1000
+                // );
+            }
         };
     }
 
