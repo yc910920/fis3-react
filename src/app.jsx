@@ -15,6 +15,13 @@ const  { SubMenu } = Menu;
 
 
 export default class extends Component {
+
+    // not use redux
+    state = {
+
+    };
+
+
     /**
      * @desc JSX
      */
