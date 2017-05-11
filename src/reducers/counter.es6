@@ -19,6 +19,13 @@ export default function counterReducer(state, action) {
                 ...state,
                 count: state.count - 1
             };
+        
+        // updater date
+        case actionTypes.COUNTER_UPDATETIME:
+            return {
+                ...state,
+                currentTime: action.payload
+            };
 
         default:
             return state || {
