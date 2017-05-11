@@ -8,7 +8,7 @@ import { Map } from 'immutable';
 
 
 
-export default function t() {
+export default function T() {
     return (
         <div>
             {Date.now()}
