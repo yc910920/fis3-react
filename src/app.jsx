@@ -5,7 +5,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Link } from 'react-router-dom';
 import { Routes } from '/src/routes';
 import { configureStore } from '/src/store';
 import { Icon, Layout, Menu } from 'antd';
