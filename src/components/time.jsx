@@ -24,12 +24,7 @@ export default class extends Component {
 
 
     componentDidMount() {
-        function updater() {
-            setTimeout(() => {
-                this.setState({ date: moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a') });
-            }, 1000);
-        }
-        updater();
+        
     }
 
 
