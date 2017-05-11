@@ -5,6 +5,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Map } from 'immutable';
+import { moment } from '/src/util';
 
 
 
@@ -20,7 +21,7 @@ export default class extends Component {
     render() {
         return (
             <div>
-                {Date.now()} time
+                {moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')}
             </div>
         );
     }
