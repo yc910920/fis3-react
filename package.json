@@ -3,28 +3,28 @@
     "version": "1.0.0",
     "description": "react project scaffolding",
     "main": "fis-conf.js",
-    "scripts": {
-        "dev": "fis3 server clean && fis3 release -cw",
-        "pro": "fis3 server clean && fis3 release production -cw",
-        "start": "fis3 server clean && fis3 release -c && fis3 server start -p 8800",
-        "build": "rm -rf build && fis3 release production -cd build",
-        "commit": "git add . && git commit",
-        "push": "git push"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/shanchenbaby/fis3-react.git"
-    },
-    "keywords": [
-        "react"
-    ],
     "author": "小虎牙",
     "email": "99874405@qq.com",
     "license": "ISC",
+    "homepage": "https://github.com/shanchenbaby/fis3-react#readme",
+    "keywords": [
+        "react"
+    ],
     "bugs": {
         "url": "https://github.com/shanchenbaby/fis3-react/issues"
     },
-    "homepage": "https://github.com/shanchenbaby/fis3-react#readme",
+    "repository": {
+        "type": "git",
+        "url": " https://github.com/shanchenbaby/fis3-react.git"
+    },
+    "scripts": {
+        "dev": "   fis3 server clean && fis3 release -cw",
+        "pro": "   fis3 server clean && fis3 release production -cw",
+        "start": " fis3 server clean && fis3 release -c && fis3 server start -p 8800 && fis3 release -w",
+        "build": " rm -rf build && fis3 release production -cd build",
+        "commit": "git add . && git commit",
+        "push": "  git push"
+    },
     "dependencies": {
         "antd": "^2.9.3",
         "moment": "^2.18.1",
@@ -32,9 +32,7 @@
         "react": "^15.5.4",
         "react-dom": "^15.5.4",
         "react-redux": "^5.0.4",
-        "react-router": "^4.1.1",
         "react-router-dom": "^4.1.1",
-        "react-router-redux": "^4.0.8",
         "redux": "^3.6.0",
         "redux-thunk": "^2.2.0",
         "fetch-jsonp": "^1.0.6",

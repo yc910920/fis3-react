@@ -3,23 +3,23 @@
 
 
 #### download project
-`1. install node && npm i fis3 -g`
+`1. install nodeJS`
 
-`2. git clone https://github.com/shanchenbaby/fis3-react.git && cd fis3-react`
+`2: sudo npm i fis3 -g`
 
-`3. npm i`
+`3. git clone https://github.com/shanchenbaby/fis3-react.git && cd fis3-react && npm i`
 
 
 #### use project
-`1. ( 开启 local web server ) npm run start`
+`1. ( 开启本地服务 ) npm run start`
 
-`2. ( 开启 local dev mode ) npm run dev`
+`2. ( 开启开发模式 ) npm run dev`
 
-`3. ( 开启 local pro mode ) npm run pro`
+`3. ( 开启上线模式 ) npm run pro`
 
 
 #### commit code
-`1. ( 资源构建 ) npm run build`
+`1. ( 本地静态资源构建 ) npm run build`
 
 `2. ( 提交代码本地仓库 ) npm run commit`
 
