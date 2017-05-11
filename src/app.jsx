@@ -16,19 +16,10 @@ const  { SubMenu } = Menu;
 
 export default class extends Component {
 
-    // not use redux
     state = {
         openKeys: [],
         selectedKeys: [],
     };
-
-
-    /**
-     * @desc 组件即将装载
-     */
-    componentWillMount() {
-        
-    }
 
 
     /**
