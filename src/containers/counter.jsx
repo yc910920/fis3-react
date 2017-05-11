@@ -4,12 +4,12 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Time from '/src/components/time';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { Button, Progress, message } from 'antd';
+import { Time } from '/src/components';
 import { actionTypes } from '/src/constants';
 import { addAction, subtractAction, fetchInterfaceTestAction } from '/src/actions/counter';
-import { Button, Progress, message } from 'antd';
 
 
 
