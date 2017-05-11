@@ -29,7 +29,7 @@ export default class extends Component {
 
 
     componentDidMount() {
-        this.props.fetchInterfaceTestAction(`?t=${Date.now()}`);
+        this.props.fetchInterfaceTestAction(`?VUI=VUI`);
     }
 
 
