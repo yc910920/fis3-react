@@ -22,7 +22,7 @@ export default class extends Component {
         const { props } = this;
         return {
             handleUpdateTime() {
-                
+                props.updateTimeAction();
             }
         };
     }
