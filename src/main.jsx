@@ -4,7 +4,7 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Hello from '/src/components/hello';
+import Home from '/src/components/home';
 import About from '/src/components/about';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
@@ -17,7 +17,7 @@ ReactDOM.render(
     <Provider store={configureStore()}>
         <div>
             <Counter />
-            <Hello />
+            <Home />
             <About />
         </div>
     </Provider>,

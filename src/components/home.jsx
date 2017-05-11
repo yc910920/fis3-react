@@ -1,5 +1,5 @@
 /**
- * @module hello
+ * @module home
  * @author 小虎牙
  */
 import React, { Component } from 'react';
@@ -8,10 +8,10 @@ import { Map } from 'immutable';
 
 
 
-export default function Hello() {
+export default function Home() {
     return (
         <div>
-            {Date.now()} hello
+            {Date.now()} home
         </div>
     );
 }
