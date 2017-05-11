@@ -9,20 +9,14 @@ import { connect } from 'react-redux';
 import { Button, Progress, message } from 'antd';
 import { Time } from '/src/components';
 import { actionTypes } from '/src/constants';
-import { addAction, subtractAction, fetchInterfaceTestAction } from '/src/actions/counter';
+import { counterAction } from '/src/actions';
 
 
 
 // connect: injection into components store
 @connect(
     state => state.counter,
-    dispatch => bindActionCreators((
-        {
-            addAction,
-            subtractAction,
-            fetchInterfaceTestAction
-        }
-    ), dispatch)
+    dispatch => bindActionCreators(counterAction, dispatch)
 )
 export default class extends Component {
 
