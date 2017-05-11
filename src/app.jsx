@@ -27,11 +27,14 @@ export default class extends Component {
      * @desc JSX
      */
     render() {
+        // Menu Props
         const menuProps = {
             mode: 'inline',
             theme: 'dark',
             openKeys: this.state.openKeys,
-            selectedKeys: this.state.selectedKeys
+            selectedKeys: this.state.selectedKeys,
+            onOpenChange: openKeys => this.setState({ openKeys: [ openKeys.pop() ] }),
+            onClick: e => this.setState({ selectedKeys: [ e.key ] })
         };
         return (
             <Router>
