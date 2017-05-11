@@ -39,15 +39,15 @@ export function subtractAction() {
 
 /**
  * @method 更新日期
- * @param  String: payload
+ * @param  String: param
  * @return undefined
  */
-export function updateTimeAction(payload) {
+export function updateTimeAction(param) {
     return (dispatch, getState) => {
         dispatch(
             {
                 type: actionTypes.COUNTER_UPDATETIME,
-                payload
+                payload: param
             }
         )
     }
