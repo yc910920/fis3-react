@@ -17,7 +17,7 @@ const  { SubMenu } = Menu;
 
 ReactDOM.render(
     <Provider store={configureStore()}>
-        <Layout>
+        <Layout id="layout">
             <Sider>
                 <div className="logo" />
                 <Menu mode="inline" theme="dark">

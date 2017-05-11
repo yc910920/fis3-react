@@ -1,5 +1,10 @@
  @import url('/node_modules/antd/dist/antd.min.css?__inline');
 
+#app,
+#layout {
+  height: 100%;
+}
+
 .logo {
   width: 120px;
   height: 32px;
