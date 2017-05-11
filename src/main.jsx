@@ -9,14 +9,21 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { Counter } from '/src/containers';
 import { Home, About } from '/src/components';
 import { configureStore } from '/src/store';
-import { Layout, Menu, Icon } from 'antd';
-const { Header, Sider, Content } = Layout;
+import { Layout } from 'antd';
+const  { Sider, Header, Content, Footer } = Layout;
 
 
 
 ReactDOM.render(
     <Provider store={configureStore()}>
-        
+        <Layout>
+            <Sider>Sider</Sider>
+            <Layout>
+                <Header>Header</Header>
+                <Content>Content</Content>
+                <Footer>Footer</Footer>
+            </Layout>
+        </Layout>
     </Provider>,
     document.getElementById('app')
 );
