@@ -41,11 +41,12 @@ export function subtractAction() {
  * @method 更新日期
  * @return undefined
  */
-export function updateTimeAction() {
+export function updateTimeAction(payload) {
     return (dispatch, getState) => {
         dispatch(
             {
-                type: actionTypes.COUNTER_SUBTRACT
+                type: actionTypes.COUNTER_UPDATETIME,
+                payload
             }
         )
     }
