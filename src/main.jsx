@@ -22,8 +22,8 @@ ReactDOM.render(
                     <li><Link to="/about">about</Link></li>
                 </ul>
                 <Route exact path="/" component={Counter} />
-                <Route exact path="/home" component={Home} />
-                <Route exact path="/about" component={About} />
+                <Route path="/home" component={Home} />
+                <Route path="/about" component={About} />
             </div>
         </Router>
     </Provider>,
