@@ -21,7 +21,9 @@ export default class extends Component {
                 <Provider store={configureStore()}>
                     <Layout id="layout">
                         <Sider id="sider">
-                            <div className="logo" />
+                            <div className="logo">
+                                atlucky.com
+                            </div>
                             <Menu mode="inline" theme="dark" id="menu">
                                 <SubMenu key="sub-01" title={<span><Icon type="appstore" /><span>menu 01</span></span>}>
                                     <Menu.Item key="sub-01-01"><Link to="/">root</Link></Menu.Item>
