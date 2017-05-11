@@ -39,8 +39,8 @@ export default class extends Component {
         return (
             <div>
                 <div>
-                    <Button size="small" onClick={props.addAction}> + </Button>&nbsp;&nbsp;
-                    <Button size="small" onClick={props.subtractAction}> - </Button>&nbsp;&nbsp;
+                    <Button size="small" disabled={props.count === props.countMax} onClick={props.addAction}> + </Button>&nbsp;&nbsp;
+                    <Button size="small" disabled={props.count === props.countMin} onClick={props.subtractAction}> - </Button>&nbsp;&nbsp;
                 </div>
                 <br />
                 <Progress type="circle" width={80} percent={props.count} />
