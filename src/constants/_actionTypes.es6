@@ -8,5 +8,5 @@ export default {
     COUNTER_SUBTRACT: 'COUNTER_SUBTRACT',
     COUNTER_UPDATETIME: 'COUNTER_UPDATETIME',
 
-    
+
 };
