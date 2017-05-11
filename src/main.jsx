@@ -16,7 +16,11 @@ const { Header, Sider, Content } = Layout;
 
 ReactDOM.render(
     <Provider store={configureStore()}>
-        <Router>
+        
+    </Provider>,
+    document.getElementById('app')
+);
+/*<Router>
             <div>
                 <ul>
                     <li><Link to="/">root</Link></li>
@@ -27,7 +31,4 @@ ReactDOM.render(
                 <Route path="/home" component={Home} />
                 <Route path="/about" component={About} />
             </div>
-        </Router>
-    </Provider>,
-    document.getElementById('app')
-);
+        </Router>*/
