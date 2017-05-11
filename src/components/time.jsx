@@ -22,7 +22,7 @@ export default class extends Component {
         const { props } = this;
         return {
             updaterTime() {
-                props.updateTimeAction();
+                props.updateTimeAction(Date.now());
             }
         };
     }
@@ -42,6 +42,9 @@ export default class extends Component {
 
     render() {
         const { props, methods } = this;
+        {
+            methods.updaterTime();
+        }
         return (
             <div>
                 {props.currentTime}
