@@ -23,7 +23,10 @@ export default class extends Component {
         const { props } = this;
         return {
             handleUpdateTime() {
-                props.updateTimeAction(moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a'));
+                setTimeout(
+                    props.updateTimeAction.bind(null, moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')),
+                    1000
+                );
             }
         };
     }
