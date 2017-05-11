@@ -12,9 +12,9 @@ export default {
 
     /**
      * @method 请求接口路径添加时间戳
-     * @param  {String} url
-     * @param  {String} param
-     * @return {String}
+     * @param  String: url
+     * @param  String: param
+     * @return string
      */
     addTimeStamp(url, param) {
         return (url + '?' + param + '&t=' + Date.now()).replace(/(\?{1,}\&)|(\?{2,})/, '?');
