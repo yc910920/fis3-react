@@ -11,6 +11,9 @@ import { Home, About } from '/src/components';
 
 
 export default class extends Component {
+    /**
+     * @desc JSX
+     */
     render() {
         return (
             <div>
