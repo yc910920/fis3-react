@@ -11,6 +11,11 @@ import { moment } from '/src/util';
 
 export default class extends Component {
     
+    state = {
+        date: moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')
+    };
+
+
     shouldComponentUpdate(nextProps, nextState) {
         return !(
             Map(nextProps) === Map(this.props)
@@ -18,10 +23,15 @@ export default class extends Component {
     }
 
 
+    componentDidMount() {
+        
+    }
+
+
     render() {
         return (
             <div>
-                {moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')}
+                {this.state.date}
             </div>
         );
     }
