@@ -4,10 +4,14 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
 import { Map } from 'immutable';
 
 
 
+@connect(
+    state => state.counter
+)
 export default class extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
