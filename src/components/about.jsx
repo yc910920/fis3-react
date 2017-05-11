@@ -12,10 +12,13 @@ import { moment } from '/src/util';
 
 
 
-export default function About() {
+export default function About({ match }) {
     return (
         <div>
             {Date.now()} about
+            <div>
+                {match.url}
+            </div>
         </div>
     );
 }
