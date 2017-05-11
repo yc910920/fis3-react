@@ -18,7 +18,8 @@ export default class extends Component {
 
     // not use redux
     state = {
-
+        current: '',
+        openKeys: [],
     };
 
 
