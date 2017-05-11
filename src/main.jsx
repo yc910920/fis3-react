@@ -33,8 +33,8 @@ ReactDOM.render(
                     <Header>此时你需要一个大大的微笑。并告诉自己，你可以的。</Header>
                     <Content>
                         <Route path="/" exact component={Counter} />
-                        <Route path="/home"   component={Home} />
-                        <Route path="/about"  component={About} />
+                        <Route path="/home" component={Home} />
+                        <Route path="/about" component={About} />
                     </Content>
                     <Footer>蚂蚁金服体验技术部出品</Footer>
                 </Layout>
