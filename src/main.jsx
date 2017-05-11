@@ -30,7 +30,7 @@ ReactDOM.render(
                     </Menu>
                 </Sider>
                 <Layout>
-                    <Header>此时你需要一个大大的微笑。并告诉自己，你可以的。</Header>
+                    <Header>不要眼红别人比你做得好,只需要每天打破你自己的记录...无论发生了什么,都要记得微笑. </Header>
                     <Content>
                         <Route path="/" exact component={Counter} />
                         <Route path="/home" component={Home} />
