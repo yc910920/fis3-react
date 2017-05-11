@@ -9,7 +9,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { Counter } from '/src/containers';
 import { Home, About } from '/src/components';
 import { configureStore } from '/src/store';
-import { Layout } from 'antd';
+import { Layout, Menu } from 'antd';
 const  { Sider, Header, Content, Footer } = Layout;
 
 
@@ -19,6 +19,11 @@ ReactDOM.render(
         <Layout>
             <Sider>
                 <div className="logo" />
+                <Menu>
+                    <Menu.Item key="1">nav 1</Menu.Item>
+                    <Menu.Item key="2">nav 2</Menu.Item>
+                    <Menu.Item key="3">nav 3</Menu.Item>
+                </Menu>
             </Sider>
             <Layout>
                 <Header>Header</Header>
