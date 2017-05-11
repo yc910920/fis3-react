@@ -9,6 +9,8 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { Counter } from '/src/containers';
 import { Home, About } from '/src/components';
 import { configureStore } from '/src/store';
+import { Layout, Menu, Icon } from 'antd';
+const { Header, Sider, Content } = Layout;
 
 
 
