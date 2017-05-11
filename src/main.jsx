@@ -9,8 +9,9 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { Counter } from '/src/containers';
 import { Home, About } from '/src/components';
 import { configureStore } from '/src/store';
-import { Layout, Menu } from 'antd';
+import { Icon, Layout, Menu } from 'antd';
 const  { Sider, Header, Content, Footer } = Layout;
+const  { SubMenu } = Menu;
 
 
 
@@ -19,10 +20,13 @@ ReactDOM.render(
         <Layout>
             <Sider>
                 <div className="logo" />
-                <Menu theme="dark">
-                    <Menu.Item key="1">nav 1</Menu.Item>
-                    <Menu.Item key="2">nav 2</Menu.Item>
-                    <Menu.Item key="3">nav 3</Menu.Item>
+                <Menu mode="inline" theme="dark">
+                    <SubMenu key="sub_menu_01" title={<span><Icon type="setting" /><span>menu</span></span>}>
+                        <Menu.Item key="01">nav 01</Menu.Item>
+                        <Menu.Item key="02">nav 02</Menu.Item>
+                        <Menu.Item key="03">nav 03</Menu.Item>
+                        <Menu.Item key="04">nav 04</Menu.Item>
+                    </SubMenu>
                 </Menu>
             </Sider>
             <Layout>
