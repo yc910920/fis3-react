@@ -6,27 +6,36 @@ import { moment } from '/src/util';
 import { actionTypes } from '/src/constants';
 export default function counterReducer(state, action) {
     switch (action.type) {
-        // +
+        /**
+         * @desc +
+         */
         case actionTypes.COUNTER_ADD:
             return {
                 ...state,
                 count: state.count + 1
             };
 
-        // -
+        /**
+         * @desc -
+         */
         case actionTypes.COUNTER_SUBTRACT:
             return {
                 ...state,
                 count: state.count - 1
             };
 
-        // updater date
+        /**
+         * @desc updater date
+         */
         case actionTypes.COUNTER_UPDATETIME:
             return {
                 ...state,
                 currentTime: action.payload
             };
 
+        /**
+         * @desc default state
+         */
         default:
             return state || {
                 count: 98,
