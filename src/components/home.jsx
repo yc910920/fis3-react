@@ -13,6 +13,7 @@ import { moment } from '/src/util';
 
 
 export default function Home() {
+    console.log(arguments);
     return (
         <div>
             {Date.now()} home

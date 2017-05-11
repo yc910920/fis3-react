@@ -63,7 +63,7 @@ export function fetchInterfaceTestAction(param) {
     return (dispatch, getState) => {
         fetch.get(API.T)
              .then(res => {
-                 console.log(res);
+                message.succss('接口测试成功');
              })
              .catch(exc => {
                  message.error(exc.status + ' > ' + exc.statusText);
