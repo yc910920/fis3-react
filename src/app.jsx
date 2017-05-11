@@ -20,9 +20,9 @@ export default class extends Component {
             <Router>
                 <Provider store={configureStore()}>
                     <Layout id="layout">
-                        <Sider>
+                        <Sider id="sider">
                             <div className="logo" />
-                            <Menu mode="inline" theme="dark">
+                            <Menu mode="inline" theme="dark" id="menu">
                                 <SubMenu key="sub-01" title={<span><Icon type="appstore" /><span>menu 01</span></span>}>
                                     <Menu.Item key="sub-01-01"><Link to="/">root</Link></Menu.Item>
                                     <Menu.Item key="sub-01-02"><Link to="/home">home</Link></Menu.Item>
@@ -30,12 +30,12 @@ export default class extends Component {
                                 </SubMenu>
                             </Menu>
                         </Sider>
-                        <Layout>
-                            <Header>不要眼红别人比你做得好,只需要每天打破你自己的记录...无论发生了什么,都要记得微笑. </Header>
-                            <Content>
+                        <Layout id="container">
+                            <Header id="header">不要眼红别人比你做得好,只需要每天打破你自己的记录...无论发生了什么,都要记得微笑. </Header>
+                            <Content id="content">
                                 <Routes />
                             </Content>
-                            <Footer>蚂蚁金服体验技术部出品</Footer>
+                            <Footer id="footer">蚂蚁金服体验技术部出品</Footer>
                         </Layout>
                     </Layout>
                 </Provider>
