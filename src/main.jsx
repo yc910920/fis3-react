@@ -15,6 +15,7 @@ import { configureStore } from '/src/store';
 ReactDOM.render(
     <Provider store={configureStore()}>
         <Counter />
+        <T />
     </Provider>,
     document.getElementById('app')
 );
