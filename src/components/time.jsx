@@ -18,7 +18,10 @@ import { moment } from '/src/util';
     dispatch => bindActionCreators(counterAction, dispatch)
 )
 export default class extends Component {
-
+    /**
+     * @method 事件集
+     * @return event coll
+     */
     get methods() {
         const that = this;
         const { props } = this;
@@ -30,6 +33,10 @@ export default class extends Component {
     }
 
 
+    /**
+     * @method 组件是否渲染
+     * @return boolean
+     */
     // shouldComponentUpdate(nextProps, nextState) {
     //     return (
     //         Map(nextProps) !== Map(this.props) || Map(nextState) !== Map(this.state)
@@ -37,11 +44,19 @@ export default class extends Component {
     // }
 
 
+    /**
+     * @method 组件完成渲染
+     * @return undefined
+     */
     componentDidMount() {
         this.methods.handleUpdateTime();
     }
 
 
+    /**
+     * @method 渲染
+     * @return JSX
+     */
     render() {
         const { props, methods } = this;
         return (
