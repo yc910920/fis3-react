@@ -7,10 +7,10 @@ import { addTimeStamp } from '/src/util';
 import 'whatwg-fetch';
 export default {
     /**
-     * @method get
-     * @param  {String} url
-     * @param  {String} param
-     * @param  {Function} cb
+     * @method get 请求
+     * @param  String:   url
+     * @param  String:   param
+     * @param  Function: cb
      */
     get(url = '', param = '', cb) {
         if (url) {
@@ -36,11 +36,12 @@ export default {
         message.error('miss url');
     },
 
+    
     /**
-     * @method post
-     * @param  {String} url
-     * @param  {Object} param
-     * @param  {Function} cb
+     * @method post 请求
+     * @param  String:   url
+     * @param  String:   param
+     * @param  Function: cb
      */
     post(url, param, cb) {
         if (url) {
@@ -69,11 +70,12 @@ export default {
         message.error('miss url');
     },
 
+
     /**
-     * @method jsonp
-     * @param  {String} url
-     * @param  {Object} param
-     * @param  {Function} cb
+     * @method jsonp 请求
+     * @param  String:   url
+     * @param  String:   param
+     * @param  Function: cb
      */
     jsonp(url, param, cb) {
 
