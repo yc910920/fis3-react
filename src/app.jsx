@@ -18,8 +18,8 @@ export default class extends Component {
 
     // not use redux
     state = {
-        current: '',
         openKeys: [],
+        selectedKeys: [],
     };
 
 
@@ -35,7 +35,7 @@ export default class extends Component {
                             <div className="logo">
                                 atlucky.com
                             </div>
-                            <Menu id="menu" mode="inline" theme="dark">
+                            <Menu id="menu" mode="inline" theme="dark" openKeys={this.state.openKeys} selectedKeys={this.state.selectedKeys}>
                                 <SubMenu key="sub-01" title={<span><Icon type="appstore" /><span>menu 01</span></span>}>
                                     <Menu.Item key="sub-01-01"><Link to="/">root</Link></Menu.Item>
                                     <Menu.Item key="sub-01-02"><Link to="/home">home</Link></Menu.Item>
