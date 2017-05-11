@@ -27,9 +27,7 @@ export default class extends Component {
      * @desc 组件即将装载
      */
     componentWillMount() {
-        if (sessionStorage.state) {
-            
-        }
+        sessionStorage.state = JSON.stringify({ ...this.state });
     }
 
 
