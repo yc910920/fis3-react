@@ -45,8 +45,7 @@ export default class extends Component {
 
 
     /**
-     * @method 组件完成渲染
-     * @return undefined
+     * @desc 组件完成渲染
      */
     componentDidMount() {
         this.methods.handleUpdateTime();
@@ -54,8 +53,7 @@ export default class extends Component {
 
 
     /**
-     * @method 渲染
-     * @return JSX
+     * @desc JSX
      */
     render() {
         const { props, methods } = this;

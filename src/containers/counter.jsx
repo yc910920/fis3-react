@@ -18,7 +18,10 @@ import { counterAction } from '/src/actions';
     dispatch => bindActionCreators(counterAction, dispatch)
 )
 export default class extends Component {
-
+    /**
+     * @method 事件集
+     * @return event coll
+     */
     get methods() {
         const that = this;
         const { props } = this;
@@ -28,11 +31,17 @@ export default class extends Component {
     }
 
 
+    /**
+     * @desc 组件完成渲染
+     */
     componentDidMount() {
         this.props.fetchInterfaceTestAction(`?VUI=VUI`);
     }
 
 
+    /**
+     * @desc JSX
+     */
     render() {
         const { props, methods } = this;
         return (
