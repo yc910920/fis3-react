@@ -2,6 +2,7 @@
  * @module counter
  * @author 小虎牙
  */
+import { moment } from '/src/util';
 import { actionTypes } from '/src/constants';
 export default function counterReducer(state, action) {
     switch (action.type) {
@@ -23,7 +24,8 @@ export default function counterReducer(state, action) {
             return state || {
                 count: 98,
                 countMax: 100,
-                countMin: 0
+                countMin: 0,
+                currentTime: moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')
             };
     }
 };
