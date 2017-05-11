@@ -10,15 +10,16 @@ import { Map } from 'immutable';
 
 
 @connect(
-    state => state.counter
+    state => state.counter,
+    dispatch => bindActionCreators(counterAction, dispatch)
 )
 export default class extends Component {
     
     get methods() {
+        const that = this;
+        const { props } = this;
         return {
-            updaterTime() {
-                
-            }
+            
         };
     }
 

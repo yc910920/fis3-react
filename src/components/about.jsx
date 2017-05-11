@@ -5,6 +5,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Map } from 'immutable';
+import { counterAction } from '/src/actions';
 
 
 
