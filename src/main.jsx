@@ -17,7 +17,7 @@ const  { SubMenu } = Menu;
 
 ReactDOM.render(
     <Provider store={configureStore()}>
-        <Router>
+        <Router id="router">
             <Layout id="layout">
                 <Sider>
                     <div className="logo" />
