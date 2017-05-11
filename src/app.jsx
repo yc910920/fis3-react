@@ -26,7 +26,6 @@ export default class extends Component {
      * @desc JSX
      */
     render() {
-        // Menu Props
         const menuProps = {
             mode: 'inline',
             theme: 'dark',
