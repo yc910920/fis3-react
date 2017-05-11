@@ -55,11 +55,11 @@ export function updateTimeAction(param) {
 
 
 /**
- * @method 接口测试
+ * @method Get: 接口测试
  * @param  String: param
  * @return undefined
  */
-export function fetchInterfaceTestAction(param) {
+export function fetchInterfaceTestAction(param = '') {
     return (dispatch, getState) => {
         fetch.get(API.T, 'name=shanchen&age=22')
              .then(res => {
