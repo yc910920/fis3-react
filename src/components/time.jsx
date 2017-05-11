@@ -37,7 +37,7 @@ export default class extends Component {
 
 
     componentDidMount() {
-
+        this.methods.handleUpdateTime();
     }
 
 
