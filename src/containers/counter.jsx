@@ -24,15 +24,7 @@ export default class extends Component {
         const that = this;
         const { props } = this;
         return {
-            handleAdd() {
-                if ( props.count >= props.countMax ) return message.warn('别他妈的点了.');
-                props.addAction();
-            },
             
-            handleSubtract() {
-                if ( props.count <= props.countMin ) return message.warn('别他妈的点了.');
-                props.subtractAction();
-            }
         };   
     }
 
@@ -47,8 +39,8 @@ export default class extends Component {
         return (
             <div>
                 <div>
-                    <Button size="small" onClick={methods.handleAdd}> + </Button>&nbsp;&nbsp;
-                    <Button size="small" onClick={methods.handleSubtract}> - </Button>&nbsp;&nbsp;
+                    <Button size="small" onClick={props.addAction}> + </Button>&nbsp;&nbsp;
+                    <Button size="small" onClick={props.subtractAction}> - </Button>&nbsp;&nbsp;
                 </div>
                 <br />
                 <Progress type="circle" width={80} percent={props.count} />
