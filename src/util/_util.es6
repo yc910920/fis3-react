@@ -5,9 +5,10 @@
 import moment from 'moment';
 export default {
     /**
-     * @method moment, API见 node_modules/moment/README.md, 【日期格式化】
+     * @method moment, API见 node_modules/moment/README.md
      */
     moment,
+
 
     /**
      * @method 请求接口路径添加时间戳
