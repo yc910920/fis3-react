@@ -22,7 +22,7 @@ ReactDOM.render(
                     <li><Link to="/about">about</Link></li>
                 </ul>
                 <Switch>
-                    <Route component={Counter} />
+                    <Route path="/" component={Counter} />
                     <Route path="/home" component={Home} />
                     <Route path="/about" component={About} />
                 </Switch>
