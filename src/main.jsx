@@ -14,11 +14,11 @@ import { configureStore } from '/src/store';
 
 ReactDOM.render(
     <Provider store={configureStore()}>
-        <div>
+        <Router>
             <Home />
             <About />
             <Counter />
-        </div>
+        </Router>
     </Provider>,
     document.getElementById('app')
 );
