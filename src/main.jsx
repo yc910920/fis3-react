@@ -44,7 +44,7 @@ ReactDOM.render(
             <Layout>
                 <Header>此时你需要一个大大的微笑。并告诉自己，你可以的。</Header>
                 <Content>Content</Content>
-                <Footer>Footer</Footer>
+                <Footer>蚂蚁金服体验技术部出品</Footer>
             </Layout>
         </Layout>
     </Provider>,
