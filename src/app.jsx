@@ -27,7 +27,9 @@ export default class extends Component {
      * @desc 组件即将装载
      */
     componentWillMount() {
-        sessionStorage.state = JSON.stringify({ ...this.state });
+        if (sessionStorage.state == null) {
+            sessionStorage.state = JSON.stringify({ ...this.state });
+        } 
     }
 
 
@@ -35,7 +37,7 @@ export default class extends Component {
      * @desc 组件即将卸载
      */
     componentWillUnMount() {
-        delete sessionStorage.state;
+        // delete sessionStorage.state;
     }
 
 
