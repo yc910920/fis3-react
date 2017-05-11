@@ -59,9 +59,9 @@ export function updateTimeAction(param) {
  * @param  String: param
  * @return undefined
  */
-export function fetchInterfaceTestAction(param = '') {
+export function fetchInterfaceTestAction(param) {
     return (dispatch, getState) => {
-        fetch.get(API.T, param)
+        fetch.get(API.T)
              .then(res => {
                  console.log(res);
              })
