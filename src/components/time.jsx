@@ -8,6 +8,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Map } from 'immutable';
 import { counterAction } from '/src/actions';
+import { moment } from '/src/util';
 
 
 
@@ -22,7 +23,7 @@ export default class extends Component {
         const { props } = this;
         return {
             handleUpdateTime() {
-                props.updateTimeAction();
+                props.updateTimeAction(moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a'));
             }
         };
     }
