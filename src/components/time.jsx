@@ -25,15 +25,15 @@ export default class extends Component {
             handleUpdateTime() {
                 
             }
-        };
+        };   
     }
 
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return (
-            Map(nextProps) !== Map(this.props) || Map(nextState) !== Map(this.state)
-        );
-    }
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     return (
+    //         Map(nextProps) !== Map(this.props) || Map(nextState) !== Map(this.state)
+    //     );
+    // }
 
 
     componentDidMount() {
