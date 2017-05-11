@@ -61,7 +61,7 @@ export function updateTimeAction(param) {
  */
 export function fetchInterfaceTestAction(param = '') {
     return (dispatch, getState) => {
-        fetch.get(API.T, 'name=shanchen&age=22')
+        fetch.get(API.T, param)
              .then(res => {
                  console.log(res);
              })
