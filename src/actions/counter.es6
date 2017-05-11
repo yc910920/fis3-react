@@ -38,6 +38,21 @@ export function subtractAction() {
 
 
 /**
+ * @method 更新日期
+ * @return undefined
+ */
+export function subtractAction() {
+    return (dispatch, getState) => {
+        dispatch(
+            {
+                type: actionTypes.COUNTER_SUBTRACT
+            }
+        )
+    }
+}
+
+
+/**
  * @method 接口测试
  * @param  {String} param
  * @return undefined

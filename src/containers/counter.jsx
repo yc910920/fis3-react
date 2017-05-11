@@ -24,7 +24,9 @@ export default class extends Component {
         const that = this;
         const { props } = this;
         return {
-            
+            updateTime() {
+                
+            }
         };   
     }
 
