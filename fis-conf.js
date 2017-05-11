@@ -4,6 +4,8 @@
 'use strict';
 (function (fis) {
 
+    // 忽略构建
+    fis.set('project.ignore', ['/build/**']);
     // 按需加载依赖
     fis.set('project.files', ['*.html', '/mock/**']);
     // 采用 commonJS 规范
@@ -49,6 +51,5 @@
     fis.media('production')
        .match('!(*.html)', { useHash: true })
        .match('/(mock/**)', { release: false })
-       .match('/(static/**.css)', { packTo: '/pkg/all.css' })
        .match('/{static,src,node_modules}/**.{js,es6,jsx}', { packTo: '/pkg/all.js', moduleId: function () { return fis.util.md5(arguments[1], 20); }, optimizer: fis.plugin('uglify-js') })
 }(fis));
