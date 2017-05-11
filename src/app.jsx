@@ -6,8 +6,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
-import { Counter } from '/src/containers';
-import { Home, About } from '/src/components';
+import { Routes } from '/src/routes';
 import { configureStore } from '/src/store';
 import { Icon, Layout, Menu } from 'antd';
 const  { Sider, Header, Content, Footer } = Layout;
@@ -34,9 +33,7 @@ export default class extends Component {
                         <Layout>
                             <Header>不要眼红别人比你做得好,只需要每天打破你自己的记录...无论发生了什么,都要记得微笑. </Header>
                             <Content>
-                                <Route path="/" exact component={Counter} />
-                                <Route path="/home" component={Home} />
-                                <Route path="/about" component={About} />
+                                <Routes />
                             </Content>
                             <Footer>蚂蚁金服体验技术部出品</Footer>
                         </Layout>
