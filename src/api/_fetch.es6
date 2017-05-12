@@ -43,13 +43,14 @@ export default {
      * @param  String:   param
      * @param  Function: cb
      */
-    post(url, param, cb) {
+    post(url = '', param = {}, cb) {
         if (url) {
             return new Promise((resolve, reject) => {
                 fetch(
                     addTimeStamp(url, ''),
                     {
-                        method: 'POST'
+                        method: 'POST',
+                        body: JSON.stringify(param)
                     }
                 ).then(
                     res => {
