@@ -50,7 +50,10 @@ export default {
                     addTimeStamp(url, ''),
                     {
                         method: 'POST',
-                        body: JSON.stringify(param)
+                        body: JSON.stringify(param),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
                     }
                 ).then(
                     res => {
