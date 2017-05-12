@@ -1,6 +1,7 @@
 /**
  * @module counter
  * @author 小虎牙
+ * @desc DOME1
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
