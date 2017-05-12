@@ -40,7 +40,7 @@ export default class extends Component {
                     <Layout id="layout">
                         <Sider id="sider">
                             <div className="logo">
-                                atlucky.com
+                                F.I.S & React
                             </div>
                             <Menu id="menu" {...menuProps}>
                                 <SubMenu key="sub-01" title={<span><Icon type="appstore" /><span>menu 01</span></span>}>
