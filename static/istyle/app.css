@@ -15,6 +15,10 @@
   margin: 8px 0;
 }
 
+#footer {
+  text-align: center;
+}
+
 .logo {
   width: 120px;
   height: 32px;

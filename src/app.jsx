@@ -68,7 +68,7 @@ export default class extends Component {
                                 <Routes />
                             </Content>
                             <Footer id="footer">
-                                footer
+                                Ant Design@2.10.0 ©2016 Created by Ant UED
                             </Footer>
                         </Layout>
                     </Layout>
