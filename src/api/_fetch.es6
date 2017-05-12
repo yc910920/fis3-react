@@ -49,6 +49,7 @@ export default {
                 fetch(
                     addTimeStamp(url, ''),
                     {
+                        credentials: 'include',
                         method: 'POST',
                         body: JSON.stringify(param),
                         headers: {
