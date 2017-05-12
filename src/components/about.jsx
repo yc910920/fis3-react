@@ -15,17 +15,6 @@ import { moment } from '/src/util';
 export default function About({ match }) {
 
     /**
-     * @method 组件是否渲染
-     * @return boolean
-     */
-    shouldComponentUpdate(nextProps, nextState) {
-        return (
-            !is(Map(nextProps), Map(this.props))
-        );
-    }
-
-
-    /**
      * @desc JSX
      */
     return (
