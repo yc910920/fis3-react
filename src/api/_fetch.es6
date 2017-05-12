@@ -18,7 +18,7 @@ export default {
                 fetch(
                     addTimeStamp(url, param)
                 ).then(
-                    (res) => {
+                    res => {
                         if (res.ok) return res.json();
                         return reject(
                             {
@@ -29,7 +29,7 @@ export default {
                         );
                     }
                 ).then(
-                    (res) => resolve(res)
+                    res => resolve(res)
                 )
             });
         }
@@ -52,7 +52,7 @@ export default {
                         method: 'POST'
                     }
                 ).then(
-                    (res) => {
+                    res => {
                         if (res.ok) return res.json();
                         return reject(
                             {
@@ -63,7 +63,7 @@ export default {
                         );
                     }
                 ).then(
-                    (res) => resolve(res)
+                    res => resolve(res)
                 )
             });
         }
