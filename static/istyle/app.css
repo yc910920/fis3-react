@@ -38,7 +38,7 @@
 }
 
 #logo a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 #components-layout-demo-custom-trigger .trigger {
