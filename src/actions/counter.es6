@@ -69,7 +69,24 @@ export function fetchInterfaceTestAction(param) {
     return (dispatch, getState) => {
         fetch.get(API.T1, param)
              .then(res => {
-                 message.success('接口测试成功');
+                //  console.log(res);
+             })
+             .catch(exc => {
+                 message.error(exc.status + ' > ' + exc.statusText);
+             });
+    }
+}
+
+
+/**
+ * @method Post: 接口测试
+ * @param  Object: param
+ * @return undefined
+ */
+export function fetchInterfaceTestAction2(param) {
+    return (dispatch, getState) => {
+        fetch.get(API.T2, param)
+             .then(res => {
                  console.log(res);
              })
              .catch(exc => {
