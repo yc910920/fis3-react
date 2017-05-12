@@ -18,7 +18,10 @@ export default {
                 fetch(
                     addTimeStamp(url, param),
                     {
-                        credentials: 'include'
+                        credentials: 'include',
+                        headers: {
+                            'Cache-Control': 'no-cache'
+                        }
                     }
                 ).then(
                     res => {
@@ -56,7 +59,8 @@ export default {
                         method: 'POST',
                         body: JSON.stringify(param),
                         headers: {
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
+                            'Cache-Control': 'no-cache'
                         }
                     }
                 ).then(
