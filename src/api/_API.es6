@@ -5,6 +5,8 @@
 export default {
 
     // 测试接口
-    'T': '/api/t1',
+    'T1': '/api/t1',
+    'T2': '/api/t2',
+    'T3': '/api/t3',
     
 };
