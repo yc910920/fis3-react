@@ -40,7 +40,7 @@ export default class extends Component {
                     <Layout id="layout">
                         <Sider id="sider">
                             <div className="logo">
-                                F.I.S & React
+                                <p>F.I.S & React</p>
                             </div>
                             <Menu id="menu" {...menuProps}>
                                 <SubMenu key="01" title={<span><Icon type="user" /><span>一个菜单</span></span>}>
@@ -62,13 +62,13 @@ export default class extends Component {
                         </Sider>
                         <Layout id="container">
                             <Header id="header">
-                                header
+                                <p>react project scaffolding</p>
                             </Header>
                             <Content id="content">
                                 <Routes />
                             </Content>
                             <Footer id="footer">
-                                Ant Design@2.10.0 ©2016 Created by Ant UED
+                                <p>Ant Design@2.10.0 ©2016 Created by Ant UED</p>
                             </Footer>
                         </Layout>
                     </Layout>
