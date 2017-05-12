@@ -17,11 +17,6 @@ export default class extends Component {
             <div className="home-page" temp=".0">
                 <section className="header" temp=".0.1">
                     <div className="header-nav-container" temp=".0.1.0">
-                        <div className="brand-name" temp=".0.1.0.0">
-                            <a className="" href="#" temp=".0.1.0.0.0">
-                                React Training
-                            </a>
-                        </div>
                         <nav className="header-nav" temp=".0.1.0.1">
                             <a className="" href="#" temp=".0.1.0.1.0">
                                 Live
@@ -61,38 +56,16 @@ export default class extends Component {
                             <div className="header-banner-text-wrapper" temp=".0.1.1.1.0">
                                 <div temp=".0.1.1.1.0.0">
                                     <div className="small-header-text" temp=".0.1.1.1.0.0.0">
-                                        Proven, Expert
                                     </div>
                                     <div className="big-header-text" temp=".0.1.1.1.0.0.1">
                                         <span temp=".0.1.1.1.0.0.1.0">
                                             <span temp=".0.1.1.1.0.0.1.0.0">
-                                                React Training
+                                                F.I.S & React
                                             </span>
-                                            <sup temp=".0.1.1.1.0.0.1.0.1">
-                                                ™
-                                            </sup>
                                         </span>
                                     </div>
                                     <div className="tagline" temp=".0.1.1.1.0.0.2">
-                                        From the creators of React Router
-                                    </div>
-                                </div>
-                                <div className="cta-buttons-wrapper" temp=".0.1.1.1.0.1">
-                                    <div temp=".0.1.1.1.0.1.0">
-                                        <a className="header-button" href="#" temp=".0.1.1.1.0.1.0.$Attend a Workshop">
-                                            Attend a Workshop
-                                        </a>
-                                        <a className="header-button" href="#" temp=".0.1.1.1.0.1.0.$View Online Courses">
-                                            View Online Courses
-                                        </a>
-                                    </div>
-                                    <div temp=".0.1.1.1.0.1.1">
-                                        <a className="header-text-button" href="#" temp=".0.1.1.1.0.1.1.$Get Private Training">
-                                            Get Private Training
-                                        </a>
-                                        <a className="header-text-button" href="#" temp=".0.1.1.1.0.1.1.$Host a Workshop">
-                                            Host a Workshop
-                                        </a>
+                                        Getting Started now!
                                     </div>
                                 </div>
                             </div>
