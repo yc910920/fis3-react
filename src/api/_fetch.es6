@@ -102,6 +102,13 @@ export default {
                     res => res.json()
                 ).then(
                     res => resolve(res)
+                ).catch(
+                    exc => reject(
+                        {
+                            url, 
+                            statusText: 'jsonp 异常'
+                        }
+                    )
                 )
             });
         }
