@@ -67,7 +67,7 @@ export function updateTimeAction() {
  */
 export function fetchInterfaceTestAction(param) {
     return (dispatch, getState) => {
-        fetch.get(API.T1)
+        fetch.get(API.T1, param)
              .then(res => {
                  message.success('接口测试成功');
                  console.log(res);
