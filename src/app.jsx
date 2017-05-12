@@ -40,7 +40,7 @@ export default class extends Component {
                     <Layout id="layout">
                         <Sider id="sider">
                             <div id="logo">
-                                <p>F.I.S & React</p>
+                                <p>logo</p>
                             </div>
                             <Menu id="menu" {...menuProps}>
                                 <SubMenu key="01" title={<span><Icon type="user" /><span>一个菜单</span></span>}>
