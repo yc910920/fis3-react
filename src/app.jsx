@@ -39,9 +39,9 @@ export default class extends Component {
                 <Provider store={configureStore()}>
                     <Layout id="layout">
                         <Sider id="sider">
-                            <div id="logo">
-                                <p>logo</p>
-                            </div>
+                            <Link to="/">
+                                <div id="logo">logo</div>
+                            </Link>
                             <Menu id="menu" {...menuProps}>
                                 <SubMenu key="01" title={<span><Icon type="user" /><span>一个菜单</span></span>}>
                                     <Menu.Item key="01-01"><Link to="/dome1">DOME1</Link></Menu.Item>
