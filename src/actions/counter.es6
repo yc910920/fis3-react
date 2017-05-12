@@ -85,7 +85,7 @@ export function fetchInterfaceTestAction(param) {
  */
 export function fetchInterfaceTestAction2(param) {
     return (dispatch, getState) => {
-        fetch.get(API.T2, param)
+        fetch.post(API.T2, param)
              .then(res => {
                  console.log(res);
              })
