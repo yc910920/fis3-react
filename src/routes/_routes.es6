@@ -16,7 +16,7 @@ export default class extends Component {
      */
     render() {
         return (
-            <div className="route-warp">
+            <div>
                 <Route path="/" component={Home} exact />
                 <Route path="/dome1" component={Counter} />
                 <Route path="/dome2" component={Div} />
