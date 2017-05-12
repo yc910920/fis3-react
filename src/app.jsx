@@ -39,7 +39,7 @@ export default class extends Component {
             <Router>
                 <Provider store={configureStore()}>
                     <Layout id="layout">
-                        <Sider id="sider">
+                        <Sider id="sider" collapsedWidth="0" collapsed={this.state.collapsed}>
                             <Link to="/">
                                 <div id="logo">logo</div>
                             </Link>
