@@ -521,10 +521,6 @@ ol.type-toc,.type-toc ol {
     font-family:"type";src:local('Fix Firefox');unicode-range:U270C
 }
 
-@font-face {
-    font-family:"iconfont";src:url('/fonts/fontawesome-webfont.eot');src:url('/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/fontawesome-webfont.woff') format('woff'), url('/fonts/fontawesome-webfont.ttf') format('truetype'), url('s/fonts/fontawesome-webfont.svg#iconfont') format('svg')
-}
-
 .iconfont {
     display: inline-block;
     font-family: "iconfont" !important;
