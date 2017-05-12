@@ -78,19 +78,19 @@ export default class extends Component {
                     {
                         [
                             {
-                                a: '/static/images/3.jpg',
-                                b: '/static/images/2.jpg',
-                                c: '/static/images/1.jpg',
+                                a: __inline('/static/images/3.jpg'),
+                                b: __inline('/static/images/2.jpg'),
+                                c: __inline('/static/images/1.jpg'),
                             },
                             {
-                                a: '/static/images/3.jpg',
-                                b: '/static/images/2.jpg',
-                                c: '/static/images/1.jpg',
+                                a: __inline('/static/images/4.jpg'),
+                                b: __inline('/static/images/5.jpg'),
+                                c: __inline('/static/images/9.jpg'),
                             },
                             {
-                                a: '/static/images/3.jpg',
-                                b: '/static/images/2.jpg',
-                                c: '/static/images/1.jpg',
+                                a: __inline('/static/images/6.jpg'),
+                                b: __inline('/static/images/7.jpg'),
+                                c: __inline('/static/images/8.jpg'),
                             }
                         ].map(({ a, b, c }) => (
                             <div style={{float: 'left', width: '33.3%'}}>
