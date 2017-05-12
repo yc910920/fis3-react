@@ -16,7 +16,7 @@ export default class extends Component {
     render() {
         return (
             <div className="module-wrap">
-                111
+                <iframe src="//taobao.com" style={{ border: 'none' }}></iframe>
             </div>
         );
     }

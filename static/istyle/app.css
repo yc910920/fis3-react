@@ -36,6 +36,11 @@
     text-decoration: none;
 }
 
+.route-warp,
+.module-wrap {
+    height: 100%;
+}
+
 .module-wrap {
     padding: 25px 20px;
 }
