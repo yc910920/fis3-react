@@ -18,6 +18,7 @@ import { moment } from '/src/util';
     dispatch => bindActionCreators(counterAction, dispatch)
 )
 export default class extends Component {
+
     /**
      * @method 事件集
      * @return event coll
@@ -37,11 +38,9 @@ export default class extends Component {
      * @method 组件是否渲染
      * @return boolean
      */
-    // shouldComponentUpdate(nextProps, nextState) {
-    //     return (
-    //         Map(nextProps) !== Map(this.props) || Map(nextState) !== Map(this.state)
-    //     );
-    // }
+    shouldComponentUpdate(nextProps, nextState) {
+        return !is(nextProps, this.props);
+    }
 
 
     /**

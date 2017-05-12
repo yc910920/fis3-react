@@ -18,6 +18,7 @@ import { counterAction } from '/src/actions';
     dispatch => bindActionCreators(counterAction, dispatch)
 )
 export default class extends Component {
+
     /**
      * @method 事件集
      * @return event coll
