@@ -101,7 +101,7 @@ export default {
                     addTimeStamp(url, param),
                     {
                         timeout: options.timeout || 3000,
-                        jsonpCallback: options.callback || ('jsonp_' + Date.now())
+                        jsonpCallback: options.callback || 'cb'
                     }
                 ).then(
                     res => res.json()
