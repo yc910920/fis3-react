@@ -62,7 +62,10 @@ export default class extends Component {
                         </Sider>
                         <Layout id="container">
                             <Header id="header">
-                                <p>react project scaffolding</p>
+                                <div id="components-layout-demo-custom-trigger">
+                                    <Icon className="trigger" type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
+                                    <span>react project scaffolding</span>
+                                </div>
                             </Header>
                             <Content id="content">
                                 <Routes />
