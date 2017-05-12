@@ -32,23 +32,13 @@
     border-radius: 6px;
     text-align: center;
     margin: 16px 28px;
+    position: relative;
+    -webkit-transition: all .3s cubic-bezier(.215,.61,.355,1);
+    transition: all .3s cubic-bezier(.215,.61,.355,1);
 }
 
 #logo a {
     text-decoration: none;
-}
-
-.module-wrap {
-    padding: 25px 20px;
-}
-
-.iframe {
-    border: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
 }
 
 #components-layout-demo-custom-trigger .trigger {
@@ -76,4 +66,17 @@
 
 #components-layout-demo-custom-trigger .ant-layout-sider-collapsed .nav-text {
     display: none;
+}
+
+.module-wrap {
+    padding: 25px 20px;
+}
+
+.iframe {
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
