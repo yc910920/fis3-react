@@ -39,7 +39,7 @@ export default class extends Component {
     componentDidMount() {
         this.props.updateTimeAction();
         this.props.fetchInterfaceTestAction(`?vui=vui`);
-        this.props.fetchInterfaceTestActio2({vui: 'vui'});
+        this.props.fetchInterfaceTestAction2({vui: 'vui'});
     }
 
 
