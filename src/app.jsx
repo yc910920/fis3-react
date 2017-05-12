@@ -61,11 +61,15 @@ export default class extends Component {
                             </Menu>
                         </Sider>
                         <Layout id="container">
-                            <Header id="header">不要眼红别人比你做得好,只需要每天打破你自己的记录...无论发生了什么,都要记得微笑. </Header>
+                            <Header id="header">
+                                header
+                            </Header>
                             <Content id="content">
                                 <Routes />
                             </Content>
-                            <Footer id="footer">蚂蚁金服体验技术部出品</Footer>
+                            <Footer id="footer">
+                                footer
+                            </Footer>
                         </Layout>
                     </Layout>
                 </Provider>
