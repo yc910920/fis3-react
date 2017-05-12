@@ -41,7 +41,7 @@ export default class extends Component {
                     <Layout id="layout">
                         <Sider id="sider" collapsedWidth="0" collapsed={this.state.collapsed}>
                             <Link to="/">
-                                <div id="logo">logo</div>
+                                <div id="logo" style={{position: 'relative', top: this.state.collapsed ? -200 : 0}}>logo</div>
                             </Link>
                             <Menu id="menu" {...menuProps}>
                                 <SubMenu key="01" title={<span><Icon type="user" /><span>一个菜单</span></span>}>
