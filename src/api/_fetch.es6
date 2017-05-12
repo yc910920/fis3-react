@@ -93,7 +93,12 @@ export default {
      * @param  String:   param
      * @param  Function: cb
      */
-    jsonp(url, param, cb) {
-
+    jsonp(url = '', param = '', cb) {
+        if (url) {
+            return new Promise((resolve, reject) => {
+                
+            });
+        }
+        message.error('miss url');
     }
 };
