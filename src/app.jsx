@@ -17,6 +17,7 @@ const  { SubMenu } = Menu;
 export default class extends Component {
 
     state = {
+        collapsed: false,
         openKeys: [],
         selectedKeys: []
     };
@@ -63,7 +64,7 @@ export default class extends Component {
                         <Layout id="container">
                             <Header id="header">
                                 <div id="components-layout-demo-custom-trigger">
-                                    <Icon className="trigger" type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
+                                    <Icon className="trigger" type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} onClick={() => this.setState({collapsed: !this.state.collapsed})} />
                                     <span>react project scaffolding</span>
                                 </div>
                             </Header>
