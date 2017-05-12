@@ -36,8 +36,8 @@ export default class extends Component {
      * @desc 组件完成渲染
      */
     componentDidMount() {
-        this.props.fetchInterfaceTestAction(`?VUI=VUI`);
         this.props.updateTimeAction();
+        this.props.fetchInterfaceTestAction(`?vui=vui`);
     }
 
 
