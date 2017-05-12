@@ -39,7 +39,9 @@ export default class extends Component {
      * @return boolean
      */
     shouldComponentUpdate(nextProps, nextState) {
-        return !is(nextProps, this.props);
+        return (
+            !is(Map(nextProps), Map(this.props))
+        );
     }
 
 
