@@ -44,13 +44,16 @@ export function subtractAction() {
  */
 export function updateTimeAction() {
     return (dispatch, getState) => {
-        setInterval(
+        setTimeout(
             () => {
                 dispatch(
                     {
                         type: actionTypes.COUNTER_UPDATETIME,
                         payload: moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')
                     }
+                );
+                dispatch(
+                    updateTimeAction()
                 );
             },
             1000
