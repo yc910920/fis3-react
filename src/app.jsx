@@ -48,6 +48,11 @@ export default class extends Component {
                                     <Menu.Item key="sub-01-02"><Link to="/home">home</Link></Menu.Item>
                                     <Menu.Item key="sub-01-03"><Link to="/about">about</Link></Menu.Item>
                                 </SubMenu>
+                                <SubMenu key="sub-02" title={<span><Icon type="appstore" /><span>menu 02</span></span>}>
+                                    <Menu.Item key="sub-02-01"><Link to="/">root</Link></Menu.Item>
+                                    <Menu.Item key="sub-02-02"><Link to="/home">home</Link></Menu.Item>
+                                    <Menu.Item key="sub-02-03"><Link to="/about">about</Link></Menu.Item>
+                                </SubMenu>
                             </Menu>
                         </Sider>
                         <Layout id="container">
