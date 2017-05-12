@@ -17,7 +17,7 @@ export default class extends Component {
     render() {
         return (
             <div>
-                <Route path="/" exact component={Counter} />
+                <Route path="/" component={Counter} exact />
                 <Route path="/home" component={Home} />
                 <Route path="/about" component={About} />
             </div>
