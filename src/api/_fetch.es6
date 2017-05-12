@@ -40,7 +40,7 @@ export default {
     /**
      * @method post 请求
      * @param  String:   url
-     * @param  String:   param
+     * @param  Object:   param
      * @param  Function: cb
      */
     post(url = '', param = {}, cb) {
@@ -49,9 +49,6 @@ export default {
                 fetch(
                     addTimeStamp(url, ''),
                     {
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
                         method: 'POST',
                         body: JSON.stringify(param)
                     }
