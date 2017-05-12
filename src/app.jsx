@@ -43,15 +43,15 @@ export default class extends Component {
                                 F.I.S & React
                             </div>
                             <Menu id="menu" {...menuProps}>
-                                <SubMenu key="sub-01" title={<span><Icon type="appstore" /><span>menu 01</span></span>}>
-                                    <Menu.Item key="sub-01-01"><Link to="/">root</Link></Menu.Item>
-                                    <Menu.Item key="sub-01-02"><Link to="/home">home</Link></Menu.Item>
-                                    <Menu.Item key="sub-01-03"><Link to="/about">about</Link></Menu.Item>
+                                <SubMenu key="01" title={<span><Icon type="appstore" /><span>这是什么</span></span>}>
+                                    <Menu.Item key="01-01"><Link to="/dome1">DOME1</Link></Menu.Item>
+                                    <Menu.Item key="01-02"><Link to="/dome2">DOME2</Link></Menu.Item>
+                                    <Menu.Item key="01-03"><Link to="/dome3">DOME3</Link></Menu.Item>
                                 </SubMenu>
-                                <SubMenu key="sub-02" title={<span><Icon type="appstore" /><span>menu 02</span></span>}>
-                                    <Menu.Item key="sub-02-01"><Link to="/">root</Link></Menu.Item>
-                                    <Menu.Item key="sub-02-02"><Link to="/home">home</Link></Menu.Item>
-                                    <Menu.Item key="sub-02-03"><Link to="/about">about</Link></Menu.Item>
+                                <SubMenu key="02" title={<span><Icon type="appstore" /><span>破菜单呗</span></span>}>
+                                    <Menu.Item key="02-01"><Link to="/dome1">DOME1</Link></Menu.Item>
+                                    <Menu.Item key="02-02"><Link to="/dome2">DOME2</Link></Menu.Item>
+                                    <Menu.Item key="02-03"><Link to="/dome3">DOME3</Link></Menu.Item>
                                 </SubMenu>
                             </Menu>
                         </Sider>
