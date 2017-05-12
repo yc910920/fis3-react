@@ -39,7 +39,7 @@ export default class extends Component {
                 <Provider store={configureStore()}>
                     <Layout id="layout">
                         <Sider id="sider">
-                            <div className="logo">
+                            <div id="logo">
                                 <p>F.I.S & React</p>
                             </div>
                             <Menu id="menu" {...menuProps}>
