@@ -18,7 +18,7 @@ export default class extends Component {
 
     state = {
         openKeys: [],
-        selectedKeys: [],
+        selectedKeys: []
     };
 
 
