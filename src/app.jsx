@@ -43,15 +43,20 @@ export default class extends Component {
                                 F.I.S & React
                             </div>
                             <Menu id="menu" {...menuProps}>
-                                <SubMenu key="01" title={<span><Icon type="appstore" /><span>这是什么</span></span>}>
+                                <SubMenu key="01" title={<span><Icon type="user" /><span>一个菜单</span></span>}>
                                     <Menu.Item key="01-01"><Link to="/dome1">DOME1</Link></Menu.Item>
                                     <Menu.Item key="01-02"><Link to="/dome2">DOME2</Link></Menu.Item>
                                     <Menu.Item key="01-03"><Link to="/dome3">DOME3</Link></Menu.Item>
                                 </SubMenu>
-                                <SubMenu key="02" title={<span><Icon type="appstore" /><span>破菜单呗</span></span>}>
+                                <SubMenu key="02" title={<span><Icon type="laptop" /><span>两个菜单</span></span>}>
                                     <Menu.Item key="02-01"><Link to="/dome1">DOME1</Link></Menu.Item>
                                     <Menu.Item key="02-02"><Link to="/dome2">DOME2</Link></Menu.Item>
                                     <Menu.Item key="02-03"><Link to="/dome3">DOME3</Link></Menu.Item>
+                                </SubMenu>
+                                <SubMenu key="03" title={<span><Icon type="notification" /><span>三个菜单</span></span>}>
+                                    <Menu.Item key="03-01"><Link to="/dome1">DOME1</Link></Menu.Item>
+                                    <Menu.Item key="03-02"><Link to="/dome2">DOME2</Link></Menu.Item>
+                                    <Menu.Item key="03-03"><Link to="/dome3">DOME3</Link></Menu.Item>
                                 </SubMenu>
                             </Menu>
                         </Sider>
