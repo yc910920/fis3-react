@@ -60,7 +60,7 @@ export default {
                         method: 'POST',
                         body: JSON.stringify(param),
                         headers: {
-                            'Content-Type': 'application/json',
+                            'Content-Type': type === 'file' ? 'multipart/form-data' : 'application/json',
                             'Cache-Control': 'no-cache'
                         }
                     }
