@@ -2,10 +2,10 @@
  * @module _fetch
  * @author 小虎牙
  */
-import 'fetch-jsonp';
-import 'whatwg-fetch';
 import { message } from 'antd';
 import { addTimeStamp } from '/src/util';
+import 'whatwg-fetch';
+import fetchJsonp from 'fetch-jsonp';
 export default {
     /**
      * @method get 请求
@@ -96,7 +96,7 @@ export default {
     jsonp(url = '', param = '', cb) {
         if (url) {
             return new Promise((resolve, reject) => {
-                
+                console.log(typeof fetchJsonp)
             });
         }
         message.error('miss url');
