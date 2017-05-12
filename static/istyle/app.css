@@ -5,6 +5,16 @@
   height: 100%;
 }
 
+#header,
+#footer,
+#content {
+  background: #fff;
+}
+
+#content {
+  margin: 8px 0;
+}
+
 .logo {
   width: 120px;
   height: 32px;
