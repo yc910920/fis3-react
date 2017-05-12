@@ -94,3 +94,21 @@ export function fetchInterfaceTestAction2(param) {
              });
     }
 }
+
+
+/**
+ * @method Jsonp: 接口测试
+ * @param  String: param
+ * @return undefined
+ */
+export function fetchInterfaceTestAction3(param) {
+    return (dispatch, getState) => {
+        fetch.jsonp(API.T3, param)
+             .then(res => {
+                //  console.log(res);
+             })
+             .catch(exc => {
+                 message.error(exc.status + ' > ' + exc.statusText);
+             });
+    }
+}
