@@ -5,6 +5,7 @@
 import { message } from 'antd';
 import { fetch, API } from '/src/api';
 import { actionTypes } from '/src/constants';
+import { moment } from '/src/util';
 
 
 /**
@@ -48,7 +49,7 @@ export function updateTimeAction() {
                 dispatch(
                     {
                         type: actionTypes.COUNTER_UPDATETIME,
-                        payload: Date.now()
+                        payload: moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')
                     }
                 )
             },
