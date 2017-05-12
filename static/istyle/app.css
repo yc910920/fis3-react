@@ -1,3 +1,4 @@
+@import url('./div.css?__inline');
 @import url('./reacttrainning.css?__inline');
 @import url('/node_modules/antd/dist/antd.min.css?__inline');
 #app,
@@ -20,7 +21,7 @@
     text-align: center;
 }
 
-#logo {
+#logo a {
     width: 120px;
     height: 32px;
     line-height: 32px;
