@@ -1,20 +1,17 @@
 @import url('./div.css?__inline');
 @import url('./reacttrainning.css?__inline');
 @import url('/node_modules/antd/dist/antd.min.css?__inline');
-#app,
-#layout {
-    height: 100%;
+
+#header, #footer, #content {
+    background: #fff;
 }
 
-#header,
-#footer,
-#content {
-    background: #fff;
+#app, #layout {
+    height: 100%;
 }
 
 #content {
     margin: 8px 0;
-  /*padding: 25px 30px;*/
 }
 
 #footer {
@@ -37,5 +34,6 @@
 }
 
 .module-wrap {
+    position: relative;
     padding: 25px 20px;
 }
