@@ -52,9 +52,7 @@ export function updateTimeAction() {
                         payload: moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')
                     }
                 );
-                dispatch(
-                    updateTimeAction()
-                );
+                dispatch(updateTimeAction());
             },
             1000
         );
