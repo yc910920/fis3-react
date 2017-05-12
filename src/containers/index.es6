@@ -3,12 +3,14 @@
  * @author 小虎牙
  */
 
-// 加减器
-import Counter from './counter';
-
 // 首页
 import Home from './home';
+// 加减器
+import Counter from './counter';
+// DIV.io
+import Div from './div';
 export default {
+    Home,
     Counter,
-    Home
+    Div
 };
