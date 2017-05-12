@@ -91,13 +91,18 @@ export default {
      * @method jsonp 请求
      * @param  String:   url
      * @param  String:   param
+     * @param  Object:   options
      * @param  Function: cb
      */
-    jsonp(url = '', param = '', cb) {
+    jsonp(url = '', param = '', options = {}, cb) {
         if (url) {
             return new Promise((resolve, reject) => {
                 fetchJsonp(
                     addTimeStamp(url, param),
+                    {
+                        timeout: options.timeout || 3000,
+                        jsonpCallback: options.callback || ('jsonp_' + Date.now())
+                    }
                 ).then(
                     res => res.json()
                 ).then(
