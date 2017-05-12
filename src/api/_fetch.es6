@@ -47,7 +47,7 @@ export default {
         if (url) {
             return new Promise((resolve, reject) => {
                 fetch(
-                    addTimeStamp(url, param),
+                    addTimeStamp(url, ''),
                     {
                         method: 'POST'
                     }
