@@ -18,7 +18,7 @@ export function addAction() {
             {
                 type: actionTypes.COUNTER_ADD
             }
-        )
+        );
     }
 }
 
@@ -33,7 +33,7 @@ export function subtractAction() {
             {
                 type: actionTypes.COUNTER_SUBTRACT
             }
-        )
+        );
     }
 }
 
@@ -51,7 +51,7 @@ export function updateTimeAction() {
                         type: actionTypes.COUNTER_UPDATETIME,
                         payload: moment(Date.now()).format('YYYY-MM-DD hh:mm:ss a')
                     }
-                )
+                );
             },
             1000
         );
