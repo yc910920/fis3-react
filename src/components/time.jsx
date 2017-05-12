@@ -37,7 +37,7 @@ export default class extends Component {
         const { props, methods } = this;
         return (
             <div>
-                {Date.now()}
+                {props.ccurrentTime}
             </div>
         );
     }
