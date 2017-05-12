@@ -96,7 +96,13 @@ export default {
     jsonp(url = '', param = '', cb) {
         if (url) {
             return new Promise((resolve, reject) => {
-                console.log(typeof fetchJsonp)
+                fetchJsonp(
+                    addTimeStamp(url, param),
+                ).then(
+                    res => res.json()
+                ).then(
+                    res => resolve(res)
+                )
             });
         }
         message.error('miss url');
