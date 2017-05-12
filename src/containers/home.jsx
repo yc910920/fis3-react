@@ -75,8 +75,32 @@ export default class extends Component {
                     </section>
                 </div>
                 <div className="home-image">
-                    <p><img src={__inline('/static/images/3.jpg')} /></p>
-                    <p><img src={__inline('/static/images/2.jpg')} /></p>
+                    {
+                        [
+                            {
+                                a: '/static/images/3.jpg',
+                                b: '/static/images/2.jpg',
+                                c: '/static/images/1.jpg',
+                            },
+                            {
+                                a: '/static/images/3.jpg',
+                                b: '/static/images/2.jpg',
+                                c: '/static/images/1.jpg',
+                            },
+                            {
+                                a: '/static/images/3.jpg',
+                                b: '/static/images/2.jpg',
+                                c: '/static/images/1.jpg',
+                            }
+                        ].map(({ a, b, c }) => (
+                            <div style={{float: 'left', width: '33.3%'}}>
+                                <p><img src={a} /></p>
+                                <p><img src={b} /></p>
+                                <p><img src={c} /></p>
+                            </div>
+                        ))
+                    }
+                    <br clear="all" />
                 </div>
             </div>
         );
