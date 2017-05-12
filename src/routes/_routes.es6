@@ -5,21 +5,19 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Route } from 'react-router-dom';
-import { Counter } from '/src/containers';
-import { Home, About } from '/src/components';
+import { Home } from '/src/containers';
 
 
 
 export default class extends Component {
+
     /**
      * @desc JSX
      */
     render() {
         return (
             <div>
-                <Route path="/" component={Counter} exact />
-                <Route path="/home" component={Home} />
-                <Route path="/about" component={About} />
+                <Route path="/" component={Home} exact />
             </div>
         );
     }
