@@ -9,8 +9,11 @@ import Home from './home';
 import Counter from './counter';
 // DIV.io
 import Div from './div';
+// 淘宝网
+import Taobao from './taobao';
 export default {
     Home,
     Counter,
-    Div
+    Div,
+    Taobao
 };
