@@ -87,7 +87,7 @@ export function fetchInterfaceTestAction2(param) {
     return (dispatch, getState) => {
         fetch.post(API.T2, param)
              .then(res => {
-                 console.log(res);
+                //  console.log(res);
              })
              .catch(exc => {
                  message.error(exc.status + ' > ' + exc.statusText);
