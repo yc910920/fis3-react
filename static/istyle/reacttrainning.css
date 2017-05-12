@@ -623,14 +623,14 @@ nav.footer-nav li {
 }
 
 .logo {
-    -ms-flex: 0.75;
-    flex: 0.75;
+    -ms-flex: 0.45;
+    flex: 0.45;
     position: relative;
     top: -20px;
 }
 
 .header-banner-text {
-    padding: 50px 0 0;
+    padding: 60px 0 0;
     line-height: .9;
     -ms-flex: 1;
     flex: 1
