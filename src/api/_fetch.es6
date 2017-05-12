@@ -16,7 +16,10 @@ export default {
         if (url) {
             return new Promise((resolve, reject) => {
                 fetch(
-                    addTimeStamp(url, param)
+                    addTimeStamp(url, param),
+                    {
+                        credentials: 'include'
+                    }
                 ).then(
                     res => {
                         if (res.ok) return res.json();
