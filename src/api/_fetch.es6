@@ -49,6 +49,9 @@ export default {
                 fetch(
                     addTimeStamp(url, ''),
                     {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
                         method: 'POST',
                         body: JSON.stringify(param)
                     }
