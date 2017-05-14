@@ -20,6 +20,24 @@ import { counterAction } from '/src/actions';
 export default class extends Component {
 
     /**
+     * @desc 组件完成渲染
+     */
+    componentDidMount() {
+        // *** dispatch(action)
+        this.props.updateTimeAction();
+        
+        // *** fetch.get
+        // this.props.fetchInterfaceTestAction(`vui=vui`);
+        
+        // *** fetch.post
+        // this.props.fetchInterfaceTestAction2({vui: 'vui'});
+        
+        // *** fetch.jsonp
+        // this.props.fetchInterfaceTestAction3(`vui=vui`);
+    }
+
+
+    /**
      * @desc JSX
      */
     render() {
