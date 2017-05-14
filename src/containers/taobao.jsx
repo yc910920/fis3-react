@@ -8,9 +8,15 @@ import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Time } from '/src/components';
+import { counterAction } from '/src/actions';
 
 
 
+// injection into components store
+@connect(
+    null,
+    dispatch => bindActionCreators(counterAction, dispatch)
+)
 export default class extends Component {
 
     /**
