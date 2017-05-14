@@ -64,9 +64,6 @@ export default class extends Component {
                 <Progress type="circle" width={80} percent={props.count} />
                 <br />
                 <br />
-                <Time />
-                <br />
-                <br />
                 <div style={{position: 'relative', zIndex: 999}}>
                     <Test />
                     <Time />
