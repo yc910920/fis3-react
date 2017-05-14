@@ -10,11 +10,6 @@ import { Map, is } from 'immutable';
 
 
 
-// injection into components store
-@connect(
-    state => state.counter,
-    null
-)
 export default class extends Component {
 
     /**
@@ -32,10 +27,9 @@ export default class extends Component {
      * @desc JSX
      */
     render() {
-        const { props, methods } = this;
         return (
             <div>
-                {props.currentTime}
+                测试：{Date.now()}
             </div>
         );
     }
