@@ -5,7 +5,7 @@
 (function (fis) {
 
     // 忽略构建文件
-    fis.set('project.ignore', fis.get('project.ignore').concat(['build/**', '.gitignore', 'package.json', 'README.md']));
+    fis.set('project.ignore', ['/build/**', '/node_modules/**']);
     // 按需加载依赖
     fis.set('project.files', ['/*.html', '/mock/**']);
     // 采用 commonJS 规范
