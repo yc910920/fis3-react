@@ -1,5 +1,5 @@
 /**
- * @module time
+ * @module test
  * @author 小虎牙
  */
 import React, { Component } from 'react';

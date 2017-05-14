@@ -1,6 +1,7 @@
 /**
  * @module home
  * @author 小虎牙
+ * @desc 首页
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
