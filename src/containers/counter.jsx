@@ -69,7 +69,7 @@ export default class extends Component {
                 <Time />
                 <br />
                 <br />
-                <div>
+                <div style={{position: 'relative', zIndex: 999}}>
                     测试：{Date.now()}
                 </div>
             </div>

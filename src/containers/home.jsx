@@ -17,7 +17,7 @@ export default class extends Component {
             <div>
                 <br />
                 <br />
-                <div>
+                <div style={{position: 'relative', zIndex: 999}}>
                     测试：{Date.now()}
                 </div>
                 <br />
