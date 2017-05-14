@@ -6,16 +6,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Time, Test } from '/src/components';
-import { counterAction } from '/src/actions';
 
 
 
-// injection into components store
-@connect(
-    null,
-    dispatch => bindActionCreators(counterAction, dispatch)
-)
 export default class extends Component {
 
     /**
@@ -42,14 +35,6 @@ export default class extends Component {
     render() {
         return (
             <div>
-                <br />
-                <br />
-                <div style={{position: 'relative', zIndex: 999}}>
-                    <Test />
-                    <Time />
-                </div>
-                <br />
-                <br />
                 <div className="home-page" temp=".0">
                     <section className="header" temp=".0.1">
                         <div className="header-nav-container" temp=".0.1.0">
