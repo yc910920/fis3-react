@@ -42,7 +42,7 @@ export default class extends Component {
      */
     render() {
         return (
-            <div className="module-wrap">
+            <div className="module">
                 <br />
                 <br />
                 <div style={{position: 'relative', zIndex: 999}}>

@@ -55,7 +55,7 @@ export default class extends Component {
     render() {
         const { props, methods } = this;
         return (
-            <div className="module-wrap">
+            <div className="module">
                 <div>
                     <Button size="small" disabled={props.count === props.countMax} onClick={props.addAction}> 加加 </Button>&nbsp;&nbsp;
                     <Button size="small" disabled={props.count === props.countMin} onClick={props.subtractAction}> 剪剪 </Button>&nbsp;&nbsp;
