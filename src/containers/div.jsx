@@ -5,22 +5,10 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Map, is } from 'immutable';
 
 
 
 export default class extends Component {
-
-    /**
-     * @method 组件是否渲染
-     * @return boolean
-     */
-    shouldComponentUpdate(nextProps, nextState) {
-        return (
-            !is(Map(nextProps), Map(this.props))
-        );
-    }
-
 
     /**
      * @desc JSX
