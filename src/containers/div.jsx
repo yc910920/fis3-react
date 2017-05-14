@@ -16,6 +16,13 @@ export default class extends Component {
     render() {
         return (
             <div className="module-wrap">
+                <br />
+                <br />
+                <div>
+                    测试：{Date.now()}
+                </div>
+                <br />
+                <br />
                 <div className="login-window">
                     <div className="home-topics">
                         <ul>

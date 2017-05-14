@@ -67,6 +67,11 @@ export default class extends Component {
                 <br />
                 <br />
                 <Time />
+                <br />
+                <br />
+                <div>
+                    测试：{Date.now()}
+                </div>
             </div>
         );
     }

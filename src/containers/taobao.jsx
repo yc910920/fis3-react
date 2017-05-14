@@ -16,6 +16,13 @@ export default class extends Component {
     render() {
         return (
             <div className="module-wrap">
+                <br />
+                <br />
+                <div>
+                    测试：{Date.now()}
+                </div>
+                <br />
+                <br />
                 <iframe className="iframe" src="//taobao.com"></iframe>
             </div>
         );
