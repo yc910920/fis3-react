@@ -8,7 +8,6 @@ import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Button, Progress, message } from 'antd';
-import { Map, is } from 'immutable';
 import { Time } from '/src/components';
 import { counterAction } from '/src/actions';
 
@@ -20,17 +19,6 @@ import { counterAction } from '/src/actions';
     dispatch => bindActionCreators(counterAction, dispatch)
 )
 export default class extends Component {
-
-    /**
-     * @method 组件是否渲染
-     * @return boolean
-     */
-    shouldComponentUpdate(nextProps, nextState) {
-        return (
-            !is(Map(nextProps), Map(this.props))
-        );
-    }
-
 
     /**
      * @method 事件集
