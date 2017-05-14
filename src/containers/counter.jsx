@@ -27,9 +27,7 @@ export default class extends Component {
     get methods() {
         const that = this;
         const { props } = this;
-        return {
-            
-        };
+        return { };
     }
 
 
