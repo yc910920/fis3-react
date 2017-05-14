@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Time } from '/src/components';
+import { Time, Test } from '/src/components';
 import { counterAction } from '/src/actions';
 
 
@@ -45,7 +45,7 @@ export default class extends Component {
                 <br />
                 <br />
                 <div style={{position: 'relative', zIndex: 999}}>
-                    测试：{Date.now()}
+                    <Test />
                     <Time />
                 </div>
                 <br />
