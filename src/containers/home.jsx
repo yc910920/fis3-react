@@ -17,7 +17,7 @@ export default class extends Component {
      */
     componentDidMount() {
         // *** dispatch(action)
-        this.props.updateTimeAction();
+        // this.props.updateTimeAction();
         
         // *** fetch.get
         // this.props.fetchInterfaceTestAction(`vui=vui`);
