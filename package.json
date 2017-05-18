@@ -1,12 +1,11 @@
 {
     "name": "fis3-react",
-    "version": "1.0.0",
-    "description": "react project scaffolding",
     "main": "fis-conf.js",
-    "author": "小虎牙",
     "email": "99874405@qq.com",
+    "version": "1.0.0",
     "license": "ISC",
     "homepage": "https://github.com/shanchenbaby/fis3-react#readme",
+    "description": "react project scaffolding",
     "keywords": [
         "react"
     ],
