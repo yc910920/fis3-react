@@ -12,7 +12,7 @@ export default {
      * @param  String: param
      * @return string
      */
-    addTimeStamp(url, param) {
+    addTimeStamp(url, param = '') {
         return (url + '?' + param + '&t=' + Date.now()).replace(/\?\&/, '?');
     }
 };
