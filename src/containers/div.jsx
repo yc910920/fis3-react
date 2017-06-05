@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Time, Test } from '/src/components';
-import { counterAction } from '/src/actions';
+import { counterActions } from '/src/actions';
 
 
 

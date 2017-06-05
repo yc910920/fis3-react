@@ -4,7 +4,7 @@
  */
 
 // 加减器
-import * as counterAction from './counter';
+import * as counterActions from './counter';
 export default {
-    counterAction
+    counterActions
 };
