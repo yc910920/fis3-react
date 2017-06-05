@@ -53,36 +53,37 @@ export default {
      * @param  Function: cb
      */
     post(url = '', param = {}, type = '*', cb) {
-        if (url) {
-            return new Promise((resolve, reject) => {
-                fetch(
-                    addTimeStamp(url, ''),
-                    {
-                        credentials: 'include',
-                        method: 'POST',
-                        body: JSON.stringify(param),
-                        headers: {
-                            'Accept': 'application/json',
-                            'Content-Type': type === 'file' ? 'multipart/form-data' : 'application/json',
-                            'Cache-Control': 'no-cache'
-                        }
-                    }
-                ).then(
-                    res => {
-                        if (res.ok) return res.json();
-                        return reject(
-                            {
-                                url: res.url, 
-                                status: res.status, 
-                                statusText: res.statusText
-                            }
-                        );
-                    }
-                ).then(
-                    res => resolve(res)
-                )
-            });
+        if (url === '') {
+            return message.error('url miss');
         }
-        message.error('miss url');
+
+        return new Promise((resolve, reject) => {
+            fetch(
+                addTimeStamp(url, ''),
+                {
+                    credentials: 'include',
+                    method: 'POST',
+                    body: JSON.stringify(param),
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'Cache-Control': 'no-cache'
+                    }
+                }
+            ).then(
+                res => {
+                    if (res.ok) return res.json();
+                    return reject(
+                        {
+                            url: res.url,
+                            status: res.status,
+                            statusText: res.statusText
+                        }
+                    );
+                }
+            ).then(
+                res => resolve(res)
+            )
+        });
     }
 };
