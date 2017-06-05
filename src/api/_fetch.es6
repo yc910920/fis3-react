@@ -6,6 +6,7 @@ import 'whatwg-fetch';
 import { message } from 'antd';
 import { addTimeStamp } from '/src/util';
 export default {
+
     /**
      * @method get 请求
      * @param  String:   url
