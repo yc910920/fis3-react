@@ -1,11 +1,9 @@
 /**
- * @file fis-conf.js
+ * @file 配置文件 (fis3)
  */
 (function (fis) {
 
-    // 忽略构建文件
-    fis.set('project.ignore', ['/build/**', '/node_modules/**']);
-    // 按需加载依赖
+    // 按需加载
     fis.set('project.files', ['/*.html', '/mock/**']);
     // 采用 commonJS 规范
     fis.hook('commonjs', { extList: ['.js', '.es6', '.jsx'], baseUrl: '/src/' });
