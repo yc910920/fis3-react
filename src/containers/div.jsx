@@ -15,7 +15,7 @@ import { counterActions } from '/src/actions';
 // injection into components store
 @connect(
     null,
-    dispatch => bindActionCreators(counterAction, dispatch)
+    dispatch => bindActionCreators(counterActions, dispatch)
 )
 export default class extends Component {
 
