@@ -15,6 +15,7 @@ export default function counterReducer(state, action) {
                 count: state.count + 1
             };
 
+
         /**
          * @desc -
          */
@@ -24,6 +25,7 @@ export default function counterReducer(state, action) {
                 count: state.count - 1
             };
 
+
         /**
          * @desc updater date
          */
@@ -32,6 +34,7 @@ export default function counterReducer(state, action) {
                 ...state,
                 currentTime: action.payload
             };
+
 
         /**
          * @desc default state
