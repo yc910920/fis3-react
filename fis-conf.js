@@ -51,4 +51,4 @@
        .match('!(*.html)', { useHash: true })
        .match('/(mock/**)', { release: false })
        .match('/{static,src,node_modules}/**.{js,es6,jsx}', { optimizer: fis.plugin('uglify-js'), packTo: '/pkg/all.js', moduleId: function () { return fis.util.md5(arguments[1], 20); } })
-}(fis));
+}(fis))
