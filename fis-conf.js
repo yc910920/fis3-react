@@ -4,7 +4,7 @@
 (function (fis) {
 
     // 按需加载
-    fis.set('project.files', ['/*.html', '/mock/**']);
+    fis.set('project.files', ['/*.html', '/mock/**']).set('project.ignore', ['/node_modules/**', '/build/**']);
     // 采用 commonJS 规范
     fis.hook('commonjs', { extList: ['.js', '.es6', '.jsx'], baseUrl: '/src/' });
     // 采用 node_modules 依赖
