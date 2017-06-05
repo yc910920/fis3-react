@@ -18,7 +18,7 @@
     // 压缩 html
     fis.match('*.html', { optimizer: fis.plugin('htmlminify') });
     // 压缩 html 行内的 js && mod.js
-    fis.match('{/*.html:js,/static/lib/mod.js}', { optimizer: fis.plugin('uglify-js') });
+    fis.match('/{*.html:js,static/lib/mod.js}', { optimizer: fis.plugin('uglify-js') });
 
 
     // 开启 js 模块化
