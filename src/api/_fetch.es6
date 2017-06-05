@@ -14,37 +14,38 @@ export default {
      * @param  Function: cb
      */
     get(url = '', param = '', cb) {
-        if (url) {
-            return new Promise((resolve, reject) => {
-                fetch(
-                    addTimeStamp(url, param),
-                    {
-                        credentials: 'include',
-                        headers: {
-                            'Accept': 'application/json',
-                            'Cache-Control': 'no-cache'
-                        }
-                    }
-                ).then(
-                    res => {
-                        if (res.ok) return res.json();
-                        return reject(
-                            {
-                                url: res.url, 
-                                status: res.status, 
-                                statusText: res.statusText
-                            }
-                        );
-                    }
-                ).then(
-                    res => resolve(res)
-                )
-            });
+        if (url === '') {
+            return message.error('url miss');
         }
-        message.error('miss url');
+
+        return new Promise((resolve, reject) => {
+            fetch(
+                addTimeStamp(url, param),
+                {
+                    credentials: 'include',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Cache-Control': 'no-cache'
+                    }
+                }
+            ).then(
+                res => {
+                    if (res.ok) return res.json();
+                    return reject(
+                        {
+                            url: res.url,
+                            status: res.status,
+                            statusText: res.statusText
+                        }
+                    );
+                }
+            ).then(
+                res => resolve(res)
+            )
+        });
     },
 
-    
+
     /**
      * @method post 请求
      * @param  String:   url
