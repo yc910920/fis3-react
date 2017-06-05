@@ -18,7 +18,7 @@
 `3. ( 开启上线模式 ) npm run pro`
 
 
-#### commit 
+##### commit 
 `1. ( 本地静态资源构建 ) npm run build`
 
 `2. ( 提交代码本地仓库 ) npm run commit`
