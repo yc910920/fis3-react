@@ -2,6 +2,7 @@
 @import url('./reacttrainning.css?__inline');
 @import url('/node_modules/antd/dist/antd.min.css?__inline');
 
+
 #header, #footer, #content {
     background: #fff;
 }
