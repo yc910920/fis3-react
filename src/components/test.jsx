@@ -13,7 +13,7 @@ import { Map, is } from 'immutable';
 export default class extends Component {
 
     /**
-     * @method 组件是否渲染
+     * @method 子组件是否被渲染
      * @return boolean
      */
     shouldComponentUpdate(nextProps, nextState) {
