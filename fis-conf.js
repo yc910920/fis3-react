@@ -1,7 +1,6 @@
 /**
  * @file fis-conf.js
  */
-'use strict';
 (function (fis) {
 
     // 忽略构建文件
