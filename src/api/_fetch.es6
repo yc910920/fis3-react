@@ -2,10 +2,9 @@
  * @module _fetch
  * @author 小虎牙
  */
+import 'whatwg-fetch';
 import { message } from 'antd';
 import { addTimeStamp } from '/src/util';
-import 'whatwg-fetch';
-import fetchJsonp from 'fetch-jsonp';
 export default {
     /**
      * @method get 请求
