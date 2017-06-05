@@ -50,7 +50,6 @@ export default {
      * @method post 请求
      * @param  String:   url
      * @param  Object:   param
-     * @param  String:   type 
      * @param  Function: cb
      */
     post(url = '', param = {}, type = '*', cb) {
