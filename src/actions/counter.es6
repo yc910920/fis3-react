@@ -10,7 +10,7 @@ import { moment } from '/src/util';
 
 /**
  * @method 递增
- * @return undefined
+ * @return function
  */
 export function addAction() {
     return (dispatch, getState) => {
@@ -25,7 +25,7 @@ export function addAction() {
 
 /**
  * @method 递减
- * @return undefined
+ * @return function
  */
 export function subtractAction() {
     return (dispatch, getState) => {
@@ -40,7 +40,7 @@ export function subtractAction() {
 
 /**
  * @method 更新日期
- * @return undefined
+ * @return function
  */
 export function updateTimeAction() {
     return (dispatch, getState) => {
@@ -63,7 +63,7 @@ export function updateTimeAction() {
 /**
  * @method Get: 接口测试
  * @param  String: param
- * @return undefined
+ * @return function
  */
 export function fetchInterfaceTestAction(param) {
     return (dispatch, getState) => {
@@ -81,29 +81,11 @@ export function fetchInterfaceTestAction(param) {
 /**
  * @method Post: 接口测试
  * @param  Object: param
- * @return undefined
+ * @return function
  */
 export function fetchInterfaceTestAction2(param) {
     return (dispatch, getState) => {
         fetch.post(API.T2, param)
-             .then(res => {
-                //  console.log(res);
-             })
-             .catch(exc => {
-                 message.error(exc.status + ' > ' + exc.statusText);
-             });
-    }
-}
-
-
-/**
- * @method Jsonp: 接口测试
- * @param  String: param
- * @return undefined
- */
-export function fetchInterfaceTestAction3(param) {
-    return (dispatch, getState) => {
-        fetch.jsonp(API.T3, param)
              .then(res => {
                 //  console.log(res);
              })
