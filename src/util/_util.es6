@@ -7,7 +7,7 @@ export default {
     moment,
 
     /**
-     * @method 接口添加时间戳
+     * @method 给接口添加时间戳
      * @param  String: url
      * @param  String: param
      * @return string: http://www.baidu.com?t=1234567
@@ -17,7 +17,7 @@ export default {
     },
 
     /**
-     * @method JSON 转 url
+     * @method JSON to url
      * @param  Object: json
      * @return string: a=1&b=2&c=3
      */
