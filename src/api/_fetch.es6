@@ -4,7 +4,7 @@
  */
 import 'whatwg-fetch';
 import { message } from 'antd';
-import { addTimeStamp } from '/src/util';
+import { addTimeStamp, json2url } from '/src/util';
 export default {
 
     /**
@@ -20,7 +20,7 @@ export default {
 
         return new Promise((resolve, reject) => {
             fetch(
-                addTimeStamp(url, param),
+                addTimeStamp(url, json2url(param)),
                 {
                     credentials: 'include',
                     headers: {
