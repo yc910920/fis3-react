@@ -21,7 +21,7 @@ export default {
      * @param  Object: json
      * @return string: a=1&b=2&c=3
      */
-    json2url(json) {
+    json2url(json = {}) {
         
     }
 };
