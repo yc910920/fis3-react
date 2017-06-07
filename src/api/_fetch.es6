@@ -31,7 +31,7 @@ export default {
             ).then(
                 res => {
                     if (res.ok) return res.json();
-                    return reject(
+                    reject(
                         {
                             url: res.url,
                             status: res.status,
@@ -73,7 +73,7 @@ export default {
             ).then(
                 res => {
                     if (res.ok) return res.json();
-                    return reject(
+                    reject(
                         {
                             url: res.url,
                             status: res.status,
