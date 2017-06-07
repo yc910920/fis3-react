@@ -22,6 +22,6 @@ export default {
      * @return string: a=1&b=2&c=3
      */
     json2url(json = {}) {
-        
+        return Object.keys(json).map(key => key + '=' + json[key]).join('&');
     }
 };
