@@ -10,10 +10,10 @@ export default {
     /**
      * @method get 请求
      * @param  String:   url
-     * @param  String:   param
+     * @param  Object:   param
      * @param  Function: cb
      */
-    get(url = '', param = '', cb) {
+    get(url = '', param = {}, cb) {
         if (url === '') {
             return message.error('url miss');
         }
