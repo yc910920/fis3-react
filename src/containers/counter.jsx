@@ -38,7 +38,7 @@ export default class extends Component {
      */
     componentDidMount() {
         this.props.updateTimeAction();
-        this.props.fetchInterfaceTestAction('?name=shanchen&age=22');
+        this.props.fetchInterfaceTestAction({name: 'shanchen', age: 22});
         this.props.fetchInterfaceTestAction2({name: 'shanchen', age: 22});
     }
 
