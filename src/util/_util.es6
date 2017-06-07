@@ -10,9 +10,18 @@ export default {
      * @method 接口添加时间戳
      * @param  String: url
      * @param  String: param
-     * @return string
+     * @return string: http://www.baidu.com?t=1234567
      */
     addTimeStamp(url, param = '') {
         return (url + '?' + param + '&t=' + Date.now()).replace(/\?{1,}\&?/, '?');
+    },
+
+    /**
+     * @method JSON 转 url
+     * @param  Object: json
+     * @return string: a=1&b=2&c=3
+     */
+    json2url(json) {
+        
     }
 };
