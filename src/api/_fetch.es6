@@ -52,22 +52,22 @@ export default {
      * @param  Object:   param
      * @param  Function: cb
      */
-    post(url = '', param = {}, type = '*', cb) {
+    post(url = '', param = {}, cb) {
         if (url === '') {
             return message.error('url miss');
         }
 
         return new Promise((resolve, reject) => {
             fetch(
-                addTimeStamp(url, ''),
+                addTimeStamp(url),
                 {
                     credentials: 'include',
                     method: 'POST',
                     body: JSON.stringify(param),
                     headers: {
                         'Accept': 'application/json',
-                        'Content-Type': 'application/json',
-                        'Cache-Control': 'no-cache'
+                        'Cache-Control': 'no-cache',
+                        'Content-Type': 'application/json'
                     }
                 }
             ).then(
