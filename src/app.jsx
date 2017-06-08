@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { HashRouter as Router, Link } from 'react-router-dom';
-import { Routes } from '/src/routes';
+import { Routes as Views } from '/src/routes';
 import { configureStore } from '/src/store';
 import { Icon, Layout, Menu } from 'antd';
 const  { Sider, Header, Content, Footer } = Layout;
@@ -69,7 +69,7 @@ export default class extends Component {
                                 </div>
                             </Header>
                             <Content id="content">
-                                <Routes />
+                                <Views />
                             </Content>
                             <Footer id="footer">
                                 <p>Ant Design@2.10.0 ©2016 Created by Ant UED</p>
