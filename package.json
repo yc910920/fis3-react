@@ -18,7 +18,7 @@
     "scripts": {
         "dev": "   fis3 server clean && fis3 release -cw",
         "pro": "   fis3 server clean && fis3 release production -cw",
-        "start": " fis3 server clean && fis3 release -c && fis3 server start -p 8800 && fis3 release -w",
+        "start": " fis3 server clean && fis3 release -c && fis3 server start -p 8700 && fis3 release -w",
         "build": " rm -rf build && fis3 release production -cd build",
         "commit": "git add . && git commit",
         "push": "  git push"
