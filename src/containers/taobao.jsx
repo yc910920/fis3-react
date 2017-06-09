@@ -24,6 +24,7 @@ export default class extends Component {
      */
     componentDidMount() {
         this.props.updateTimeAction();
+        setTimeout(this.props.history.goBack, 3000);
     }
 
 
