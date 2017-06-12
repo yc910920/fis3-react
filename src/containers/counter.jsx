@@ -21,8 +21,8 @@ import { counterActions } from '/src/actions';
 export default class extends Component {
 
     /**
-     * @method 事件集
-     * @return event coll
+     * @method 函数集
+     * @return func coll
      */
     get methods() {
         const that = this;
